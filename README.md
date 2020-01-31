@@ -1,2 +1,7 @@
-# rcp-scraping
-scraping rcp match-ups
+# RCP Scrape Functions
+Get data on match-ups between Triump and Democrats.
+
+
+*Potential future improvements:*
+- Procedurally retrieve table URLs given a list of states
+- Retrieve other poll types
