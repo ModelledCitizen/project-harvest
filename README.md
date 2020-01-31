@@ -1,5 +1,5 @@
 # RCP Scrape Functions
-Get data on match-ups between Triump and Democrats.
+Get data on match-ups between Trump and Democrats.
 
 
 *Potential future improvements:*
