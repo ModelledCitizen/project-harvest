@@ -1,6 +1,6 @@
-"Poll","Date","Sample","MoE","Trump (R)","Buttigieg (D)","Spread"
-"RCP Average","3/28 - 1/8","--","--",46,43.7,"Trump +2.3"
-"FOX NewsFOX News","1/5 - 1/8","1505 RV","2.5",40,41,"Buttigieg +1"
-"FOX NewsFOX News","11/10 - 11/13","1506 RV","2.5",41,41,"Tie"
-"GravisGravis","8/14 - 8/16","926 RV","3.2",46,42,"Trump +4"
-"EmersonEmerson","3/28 - 3/30","719 RV","3.6",52,48,"Trump +4"
+"Poll","Date","Sample","MoE","Trump (R)","Buttigieg (D)","Spread","id"
+"EmersonEmerson","3/28 - 3/30","719 RV","3.6",52,48,"Trump +4",1368
+"FOX NewsFOX News","1/5 - 1/8","1505 RV","2.5",40,41,"Buttigieg +1",1403
+"FOX NewsFOX News","11/10 - 11/13","1506 RV","2.5",41,41,"Tie",2175
+"GravisGravis","8/14 - 8/16","926 RV","3.2",46,42,"Trump +4",6448
+"RCP Average","3/28 - 1/8","--","--",46,43.7,"Trump +2.3",7238

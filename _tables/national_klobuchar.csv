@@ -1,8 +1,8 @@
-"Poll","Date","Sample","MoE","Klobuchar (D)","Trump (R)","Spread"
-"RCP Average","1/15 - 1/28","--","--",45.3,43.5,"Klobuchar +1.8"
-"ABC News/Wash PostABC/WP","1/20 - 1/23","880 RV","4.0",48,47,"Klobuchar +1"
-"LA Times/USCLA Times","1/15 - 1/28","4869 RV","2.0",42,40,"Klobuchar +2"
-"FOX NewsFOX News","1/19 - 1/22","1005 RV","3.0",43,42,"Klobuchar +1"
-"CNNCNN","1/16 - 1/19","1051 RV","3.6",48,45,"Klobuchar +3"
-"QuinnipiacQuinnipiac","12/4 - 12/9","1553 RV","2.5",47,43,"Klobuchar +4"
-"EmersonEmerson","2/14 - 2/16","1000 RV","3.3",51,49,"Klobuchar +2"
+"Poll","Date","Sample","MoE","Klobuchar (D)","Trump (R)","Spread","id"
+"ABC News/Wash PostABC/WP","1/20 - 1/23","880 RV","4.0",48,47,"Klobuchar +1",6778
+"CNNCNN","1/16 - 1/19","1051 RV","3.6",48,45,"Klobuchar +3",9236
+"EmersonEmerson","2/14 - 2/16","1000 RV","3.3",51,49,"Klobuchar +2",4709
+"FOX NewsFOX News","1/19 - 1/22","1005 RV","3.0",43,42,"Klobuchar +1",4129
+"LA Times/USCLA Times","1/15 - 1/28","4869 RV","2.0",42,40,"Klobuchar +2",9884
+"QuinnipiacQuinnipiac","12/4 - 12/9","1553 RV","2.5",47,43,"Klobuchar +4",3459
+"RCP Average","1/15 - 1/28","--","--",45.3,43.5,"Klobuchar +1.8",3055

@@ -1,7 +1,7 @@
-"Poll","Date","Sample","MoE","Warren (D)","Trump (R)","Spread"
-"RCP Average","11/13 - 1/23","--","--",48,47,"Warren +1.0"
-"NBC News/MaristNBC/Marist","1/20 - 1/23","2223 RV","2.6",48,44,"Warren +4"
-"WHDH/EmersonEmerson","11/22 - 11/26","1184 RV","4.2",49,51,"Trump +2"
-"St. AnselmSt. Anselm","11/13 - 11/18","512 RV","4.3",47,46,"Warren +1"
-"EmersonEmerson","9/6 - 9/9","1041 RV","2.9",49,51,"Trump +2"
-"EmersonEmerson","2/21 - 2/22","910 RV","3.2",52,48,"Warren +4"
+"Poll","Date","Sample","MoE","Warren (D)","Trump (R)","Spread","id"
+"EmersonEmerson","2/21 - 2/22","910 RV","3.2",52,48,"Warren +4",5216
+"EmersonEmerson","9/6 - 9/9","1041 RV","2.9",49,51,"Trump +2",5063
+"NBC News/MaristNBC/Marist","1/20 - 1/23","2223 RV","2.6",48,44,"Warren +4",1960
+"RCP Average","11/13 - 1/23","--","--",48,47,"Warren +1.0",7904
+"St. AnselmSt. Anselm","11/13 - 11/18","512 RV","4.3",47,46,"Warren +1",1546
+"WHDH/EmersonEmerson","11/22 - 11/26","1184 RV","4.2",49,51,"Trump +2",6540
