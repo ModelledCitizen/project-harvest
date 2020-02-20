@@ -10,6 +10,8 @@
 # Packages ----------------------------------------------------------------
 
 library(rvest)
+library(RCurl)
+library(jsonlite)
 
 # Working Directory -------------------------------------------------------
 
@@ -133,3 +135,16 @@ write.csv(
   file = "_tables/all_polls.csv",
   row.names = F
 )
+
+
+
+
+# Just grab the JSON ------------------------------------------------------
+
+raw_polls <- (getURL("https://www.realclearpolitics.com/poll/race/6730/polling_data.json") %>% fromJSON())[["poll"]]
+saveRDS(raw_polls, file = "_data/raw_polls.rds")
+
+
+
+
+(getURL("https://www.realclearpolitics.com/poll/race/6251/polling_data.json") %>% fromJSON())[["poll"]]
