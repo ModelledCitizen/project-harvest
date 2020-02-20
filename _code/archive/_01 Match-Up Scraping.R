@@ -8,7 +8,12 @@
 
 library(rvest)
 
+
+
 setwd("~/rcp-scraping")
+
+
+# Functions ---------------------------------------------------------------
 
 fetch_polls <- function(url_list) {
   lapply(url_list, function(x) {
@@ -18,6 +23,7 @@ fetch_polls <- function(url_list) {
     (function(y) {y[[1]]})
   })
 }
+
 write_save <- function(url_lst, filename) {
   data <- fetch_polls(url_list = url_lst)
   saveRDS(data, file = paste0("_data/", filename, ".rds"))
@@ -31,17 +37,19 @@ write_save <- function(url_lst, filename) {
 }
 
 
+# Run ---------------------------------------------------------------------
+
 write_save(
   list(
     warren = "https://www.realclearpolitics.com/epolls/2020/president/us/general_election_trump_vs_warren-6251.html",
     biden = "https://www.realclearpolitics.com/epolls/2020/president/us/general_election_trump_vs_biden-6247.html",
     sanders = "https://www.realclearpolitics.com/epolls/2020/president/us/general_election_trump_vs_sanders-6250.html",
     buttigieg = "https://www.realclearpolitics.com/epolls/2020/president/us/general_election_trump_vs_buttigieg-6872.html",
-    klobuchar = "https://www.realclearpolitics.com/epolls/2020/president/us/general_election_trump_vs_klobuchar-6803.html"
+    klobuchar = "https://www.realclearpolitics.com/epolls/2020/president/us/general_election_trump_vs_klobuchar-6803.html",
+    bloomberg = "https://www.realclearpolitics.com/epolls/2020/president/us/general_election_trump_vs_bloomberg-6797.html"
   ),
   "national"
 )
-
 
 write_save(
   list(

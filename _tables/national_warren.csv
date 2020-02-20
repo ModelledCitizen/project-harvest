@@ -1,73 +1,73 @@
 "Poll","Date","Sample","MoE","Warren (D)","Trump (R)","Spread","id"
-"ABC News/Wash PostABC/WP","1/20 - 1/23","880 RV","4.0",48,48,"Tie",5949
-"ABC News/Wash PostABC/WP","10/27 - 10/30","876 RV","4.0",55,40,"Warren +15",6192
-"ABC News/Wash PostABC/WP","2/14 - 2/17","913 RV","4.0",48,47,"Warren +1",5844
-"ABC News/Wash PostABC/WP","6/28 - 7/1","875 RV","4.0",48,48,"Tie",9476
-"ABC News/Wash PostABC/WP","9/2 - 9/5","877 RV","4.0",51,44,"Warren +7",6258
-"CNNCNN","1/16 - 1/19","1051 RV","3.6",50,45,"Warren +5",1638
-"CNNCNN","10/17 - 10/20","892 RV","4.0",52,44,"Warren +8",7810
-"CNNCNN","12/12 - 12/15","888 RV","4.0",47,46,"Warren +1",9397
-"CNNCNN","4/25 - 4/29","452 RV","5.6",47,48,"Trump +1",8976
-"EmersonEmerson","1/21 - 1/23","1128 RV","2.8",50,50,"Tie",5891
-"EmersonEmerson","10/12 - 10/14","820 RV","3.4",44,44,"Tie",6050
-"EmersonEmerson","10/18 - 10/21","1000 RV","3.0",51,49,"Warren +2",3228
-"EmersonEmerson","11/17 - 11/20","1092 RV","2.9",50,50,"Tie",6743
-"EmersonEmerson","12/15 - 12/17","1222 RV","2.7",51,49,"Warren +2",7513
-"EmersonEmerson","2/14 - 2/16","1000 RV","3.3",53,47,"Warren +6",1680
-"EmersonEmerson","3/17 - 3/18","1153 RV","2.8",51,49,"Warren +2",6056
-"EmersonEmerson","4/11 - 4/14","914 RV","3.2",48,52,"Trump +4",2867
-"EmersonEmerson","5/10 - 5/13","1006 RV","3.0",52,49,"Warren +3",8597
-"EmersonEmerson","6/21 - 6/24","1096 RV","2.9",53,47,"Warren +6",1291
-"EmersonEmerson","7/27 - 7/29","1233 RV","2.7",50,50,"Tie",8162
-"EmersonEmerson","7/6 - 7/8","1100 RV","2.9",49,51,"Trump +2",3546
-"EmersonEmerson","8/24 - 8/26","1458 RV","2.5",50,50,"Tie",3549
-"EmersonEmerson","9/21 - 9/23","1019 RV","3.0",51,49,"Warren +2",7814
-"FOX NewsFOX News","1/19 - 1/22","1005 RV","3.0",47,42,"Warren +5",9799
-"FOX NewsFOX News","10/27 - 10/30","1040 RV","3.0",46,41,"Warren +5",7472
-"FOX NewsFOX News","10/6 - 10/8","1003 RV","3.0",50,40,"Warren +10",1373
-"FOX NewsFOX News","12/8 - 12/11","1000 RV","3.0",46,45,"Warren +1",8287
-"FOX NewsFOX News","3/17 - 3/20","1002 RV","3.0",40,42,"Trump +2",7827
-"FOX NewsFOX News","5/11 - 5/14","1001 RV","3.0",43,41,"Warren +2",3437
-"FOX NewsFOX News","6/9 - 6/12","1001 RV","3.0",43,41,"Warren +2",1274
-"FOX NewsFOX News","7/21 - 7/23","1004 RV","3.0",41,42,"Trump +1",1679
-"FOX NewsFOX News","8/11 - 8/13","1013 RV","3.0",46,39,"Warren +7",3953
-"FOX NewsFOX News","9/15 - 9/17","1008 RV","3.0",46,40,"Warren +6",5289
-"IBD/TIPPIBD/TIPP","1/23 - 1/30","856 RV","3.3",46,50,"Trump +4",8481
-"IBD/TIPPIBD/TIPP","1/3 - 1/11","846 RV","3.3",46,47,"Trump +1",7274
-"IBD/TIPPIBD/TIPP","10/24 - 10/31","863 RV","3.5",52,44,"Warren +8",2989
-"IBD/TIPPIBD/TIPP","12/5 - 12/14","849 RV","3.5",45,49,"Trump +4",6238
-"IBD/TIPPIBD/TIPP","7/25 - 8/1","856 RV","3.5",49,45,"Warren +4",6750
-"IBD/TIPPIBD/TIPP","8/22 - 8/30","848 RV","3.5",49,46,"Warren +3",8673
-"IBD/TIPPIBD/TIPP","9/26 - 10/3","863 RV","3.5",48,46,"Warren +2",3463
-"LA Times/USCLA Times","1/15 - 1/28","4869 RV","2.0",45,41,"Warren +4",6287
-"NBC News/Wall St. JrnlNBC/WSJ","1/26 - 1/29","1000 RV","3.1",48,45,"Warren +3",4690
-"NBC News/Wall St. JrnlNBC/WSJ","10/27 - 10/30","720 RV","3.7",50,42,"Warren +8",9448
-"NBC News/Wall St. JrnlNBC/WSJ","7/7 - 7/9","800 RV","3.5",48,43,"Warren +5",6754
-"NPR/PBS/MaristNPR/PBS","2/13 - 2/16","1164 RV","3.7",47,46,"Warren +1",1107
-"PPP (D)PPP (D)","1/19 - 1/21","760 RV","3.6",48,42,"Warren +6",4382
-"PPP (D)PPP (D)","10/27 - 10/29","572 RV","4.1",50,40,"Warren +10",5750
-"PPP (D)PPP (D)","12/11 - 12/12","862 RV","3.3",51,42,"Warren +9",9413
-"PPP (D)PPP (D)","2/9 - 2/11","687 RV","3.7",44,44,"Tie",7061
-"PPP (D)PPP (D)","3/23 - 3/25","846 RV","3.4",51,40,"Warren +11",7013
-"PPP (D)PPP (D)","3/27 - 3/28","846 RV","3.4",48,42,"Warren +6",6052
-"PPP (D)PPP (D)","3/27 - 3/28","677 RV","3.8",48,43,"Warren +5",6052
-"PPP (D)PPP (D)","4/17 - 4/18","648 RV","3.9",46,42,"Warren +4",7225
-"PPP (D)PPP (D)","5/12 - 5/14","692 RV","3.7",49,39,"Warren +10",5415
-"PPP (D)PPP (D)","6/8 - 6/10","679 RV","3.8",48,40,"Warren +8",9056
-"PPP (D)PPP (D)","6/9 - 6/11","811 RV","3.4",46,43,"Warren +3",4194
-"PPP (D)PPP (D)","7/14 - 7/17","836 RV","3.4",49,42,"Warren +7",7962
-"PPP (D)PPP (D)","8/18 - 8/21","887 RV","3.3",45,40,"Warren +5",2300
-"PPP (D)PPP (D)","9/22 - 9/25","865 RV","3.3",47,41,"Warren +6",8958
-"QuinnipiacQuinnipiac","10/4 - 10/7","1483 RV","3.1",49,41,"Warren +8",9019
-"QuinnipiacQuinnipiac","12/4 - 12/9","1553 RV","2.5",50,43,"Warren +7",1012
-"QuinnipiacQuinnipiac","2/5 - 2/9","1519 RV","2.5",48,44,"Warren +4",7275
-"QuinnipiacQuinnipiac","6/6 - 6/10","1214 RV","3.5",49,42,"Warren +7",6564
-"QuinnipiacQuinnipiac","8/21 - 8/26","1422 RV","4.6",52,40,"Warren +12",3611
-"Rasmussen ReportsRasmussen","10/17 - 10/18","1000 LV","3.0",46,44,"Warren +2",9917
-"Rasmussen ReportsRasmussen","5/12 - 5/23","5000 LV","1.5",46,44,"Warren +2",7983
-"RCP Average","2/5 - 2/17","--","--",47.7,45.7,"Warren +2.0",6118
-"SurveyUSASUSA","10/15 - 10/16","3080 RV","2.1",48,44,"Warren +4",1677
-"SurveyUSASUSA","11/20 - 11/21","3850 RV","1.7",49,42,"Warren +7",5656
-"SurveyUSASUSA","8/1 - 8/5","5459 RV","1.6",46,44,"Warren +2",9188
-"SurveyUSASUSA","9/13 - 9/16","4520 RV","1.6",45,43,"Warren +2",1606
-"USA Today/SuffolkUSA Today","12/10 - 12/14","1000 RV","3.0",37,45,"Trump +8",2810
+"ABC News/Wash PostABC/WP","1/20 - 1/23","880 RV","4.0",48,48,"Tie",1387
+"ABC News/Wash PostABC/WP","10/27 - 10/30","876 RV","4.0",55,40,"Warren +15",6143
+"ABC News/Wash PostABC/WP","2/14 - 2/17","913 RV","4.0",48,47,"Warren +1",1309
+"ABC News/Wash PostABC/WP","6/28 - 7/1","875 RV","4.0",48,48,"Tie",2927
+"ABC News/Wash PostABC/WP","9/2 - 9/5","877 RV","4.0",51,44,"Warren +7",8006
+"CNNCNN","1/16 - 1/19","1051 RV","3.6",50,45,"Warren +5",6863
+"CNNCNN","10/17 - 10/20","892 RV","4.0",52,44,"Warren +8",3051
+"CNNCNN","12/12 - 12/15","888 RV","4.0",47,46,"Warren +1",8408
+"CNNCNN","4/25 - 4/29","452 RV","5.6",47,48,"Trump +1",1948
+"EmersonEmerson","1/21 - 1/23","1128 RV","2.8",50,50,"Tie",7035
+"EmersonEmerson","10/12 - 10/14","820 RV","3.4",44,44,"Tie",9031
+"EmersonEmerson","10/18 - 10/21","1000 RV","3.0",51,49,"Warren +2",3752
+"EmersonEmerson","11/17 - 11/20","1092 RV","2.9",50,50,"Tie",5929
+"EmersonEmerson","12/15 - 12/17","1222 RV","2.7",51,49,"Warren +2",4212
+"EmersonEmerson","2/14 - 2/16","1000 RV","3.3",53,47,"Warren +6",1390
+"EmersonEmerson","3/17 - 3/18","1153 RV","2.8",51,49,"Warren +2",3111
+"EmersonEmerson","4/11 - 4/14","914 RV","3.2",48,52,"Trump +4",4112
+"EmersonEmerson","5/10 - 5/13","1006 RV","3.0",52,49,"Warren +3",8187
+"EmersonEmerson","6/21 - 6/24","1096 RV","2.9",53,47,"Warren +6",7485
+"EmersonEmerson","7/27 - 7/29","1233 RV","2.7",50,50,"Tie",7214
+"EmersonEmerson","7/6 - 7/8","1100 RV","2.9",49,51,"Trump +2",2279
+"EmersonEmerson","8/24 - 8/26","1458 RV","2.5",50,50,"Tie",1051
+"EmersonEmerson","9/21 - 9/23","1019 RV","3.0",51,49,"Warren +2",6690
+"FOX NewsFOX News","1/19 - 1/22","1005 RV","3.0",47,42,"Warren +5",6779
+"FOX NewsFOX News","10/27 - 10/30","1040 RV","3.0",46,41,"Warren +5",9520
+"FOX NewsFOX News","10/6 - 10/8","1003 RV","3.0",50,40,"Warren +10",7932
+"FOX NewsFOX News","12/8 - 12/11","1000 RV","3.0",46,45,"Warren +1",7294
+"FOX NewsFOX News","3/17 - 3/20","1002 RV","3.0",40,42,"Trump +2",5009
+"FOX NewsFOX News","5/11 - 5/14","1001 RV","3.0",43,41,"Warren +2",8194
+"FOX NewsFOX News","6/9 - 6/12","1001 RV","3.0",43,41,"Warren +2",8960
+"FOX NewsFOX News","7/21 - 7/23","1004 RV","3.0",41,42,"Trump +1",2427
+"FOX NewsFOX News","8/11 - 8/13","1013 RV","3.0",46,39,"Warren +7",7405
+"FOX NewsFOX News","9/15 - 9/17","1008 RV","3.0",46,40,"Warren +6",3150
+"IBD/TIPPIBD/TIPP","1/23 - 1/30","856 RV","3.3",46,50,"Trump +4",1089
+"IBD/TIPPIBD/TIPP","1/3 - 1/11","846 RV","3.3",46,47,"Trump +1",7793
+"IBD/TIPPIBD/TIPP","10/24 - 10/31","863 RV","3.5",52,44,"Warren +8",7636
+"IBD/TIPPIBD/TIPP","12/5 - 12/14","849 RV","3.5",45,49,"Trump +4",1372
+"IBD/TIPPIBD/TIPP","7/25 - 8/1","856 RV","3.5",49,45,"Warren +4",2540
+"IBD/TIPPIBD/TIPP","8/22 - 8/30","848 RV","3.5",49,46,"Warren +3",9388
+"IBD/TIPPIBD/TIPP","9/26 - 10/3","863 RV","3.5",48,46,"Warren +2",6606
+"LA Times/USCLA Times","1/15 - 1/28","4869 RV","2.0",45,41,"Warren +4",3191
+"NBC News/Wall St. JrnlNBC/WSJ","1/26 - 1/29","1000 RV","3.1",48,45,"Warren +3",3599
+"NBC News/Wall St. JrnlNBC/WSJ","10/27 - 10/30","720 RV","3.7",50,42,"Warren +8",6158
+"NBC News/Wall St. JrnlNBC/WSJ","7/7 - 7/9","800 RV","3.5",48,43,"Warren +5",3865
+"NPR/PBS/MaristNPR/PBS","2/13 - 2/16","1164 RV","3.7",47,46,"Warren +1",7943
+"PPP (D)PPP (D)","1/19 - 1/21","760 RV","3.6",48,42,"Warren +6",2350
+"PPP (D)PPP (D)","10/27 - 10/29","572 RV","4.1",50,40,"Warren +10",1705
+"PPP (D)PPP (D)","12/11 - 12/12","862 RV","3.3",51,42,"Warren +9",7564
+"PPP (D)PPP (D)","2/9 - 2/11","687 RV","3.7",44,44,"Tie",2061
+"PPP (D)PPP (D)","3/23 - 3/25","846 RV","3.4",51,40,"Warren +11",1914
+"PPP (D)PPP (D)","3/27 - 3/28","846 RV","3.4",48,42,"Warren +6",5486
+"PPP (D)PPP (D)","3/27 - 3/28","677 RV","3.8",48,43,"Warren +5",5486
+"PPP (D)PPP (D)","4/17 - 4/18","648 RV","3.9",46,42,"Warren +4",3066
+"PPP (D)PPP (D)","5/12 - 5/14","692 RV","3.7",49,39,"Warren +10",4162
+"PPP (D)PPP (D)","6/8 - 6/10","679 RV","3.8",48,40,"Warren +8",4765
+"PPP (D)PPP (D)","6/9 - 6/11","811 RV","3.4",46,43,"Warren +3",8809
+"PPP (D)PPP (D)","7/14 - 7/17","836 RV","3.4",49,42,"Warren +7",4905
+"PPP (D)PPP (D)","8/18 - 8/21","887 RV","3.3",45,40,"Warren +5",9521
+"PPP (D)PPP (D)","9/22 - 9/25","865 RV","3.3",47,41,"Warren +6",1106
+"QuinnipiacQuinnipiac","10/4 - 10/7","1483 RV","3.1",49,41,"Warren +8",9625
+"QuinnipiacQuinnipiac","12/4 - 12/9","1553 RV","2.5",50,43,"Warren +7",6957
+"QuinnipiacQuinnipiac","2/5 - 2/9","1519 RV","2.5",48,44,"Warren +4",9196
+"QuinnipiacQuinnipiac","6/6 - 6/10","1214 RV","3.5",49,42,"Warren +7",6910
+"QuinnipiacQuinnipiac","8/21 - 8/26","1422 RV","4.6",52,40,"Warren +12",4133
+"Rasmussen ReportsRasmussen","10/17 - 10/18","1000 LV","3.0",46,44,"Warren +2",8302
+"Rasmussen ReportsRasmussen","5/12 - 5/23","5000 LV","1.5",46,44,"Warren +2",4957
+"RCP Average","2/5 - 2/17","--","--",47.7,45.7,"Warren +2.0",2239
+"SurveyUSASUSA","10/15 - 10/16","3080 RV","2.1",48,44,"Warren +4",2391
+"SurveyUSASUSA","11/20 - 11/21","3850 RV","1.7",49,42,"Warren +7",2527
+"SurveyUSASUSA","8/1 - 8/5","5459 RV","1.6",46,44,"Warren +2",1723
+"SurveyUSASUSA","9/13 - 9/16","4520 RV","1.6",45,43,"Warren +2",8522
+"USA Today/SuffolkUSA Today","12/10 - 12/14","1000 RV","3.0",37,45,"Trump +8",2565
