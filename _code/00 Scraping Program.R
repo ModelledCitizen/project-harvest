@@ -19,8 +19,12 @@ setwd("~/rcp-scraping")
 
 fetch_polls <- function(url_list) {
   lapply(url_list, function(x) {
-    read_html(x) %>%
-      html_nodes(xpath = "//*[@id=\"polling-data-full\"]/table") %>%
+    tableset <- read_html(x) %>%
+      html_nodes(xpath = "//*[@id=\"polling-data-full\"]/table")
+    tableset %>%
+      html_nodes(".mobile_pollster_name") %>%
+      xml_remove()
+    tableset %>%
       html_table() %>%
       (function(y) {y[[1]]})
   })
@@ -108,3 +112,24 @@ find_medians(
 
 
 
+
+
+# General Election Poll Table ---------------------------------------------
+
+url <- "https://www.realclearpolitics.com/epolls/2020/president/us/2020_democratic_presidential_nomination-6730.html"
+
+all_polls <- read_html(url) %>%
+  html_nodes(xpath = "//*[@id=\"polling-data-full\"]/table")
+all_polls %>%
+  html_nodes(".mobile_pollster_name") %>%
+  xml_remove()
+all_polls %>%
+  html_table() %>%
+  (function(y) {y[[1]]})
+
+saveRDS(all_polls, file = "_data/all_polls.rds")
+write.csv(
+  all_polls,
+  file = "_tables/all_polls.csv",
+  row.names = F
+)
