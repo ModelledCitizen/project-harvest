@@ -129,5 +129,3 @@ export_tables(list(
   Klobuchar = 6803,
   Bloomberg = 6797
 ))
-
-temp <- import_rcp(62
