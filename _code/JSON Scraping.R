@@ -81,32 +81,28 @@ get_all_medians <- function(poll_list) {
 }
 
 export_tables <- function(poll_list) {
-  extract_spreads <- function(pll) {
-    sign_spread <- function(sprds) {
-      ot <-
-        switch(
-          sprds[["affiliation"]],
-          Democrat = as.numeric(sprds[["value"]]),
-          Republican = -as.numeric(sprds[["value"]])
-        )
-      if (is.null(ot) & sprds[["name"]] == "Tie") {
-        ot <- 0
-      }
-      ot
-    }
+  bind_spreads <- function(pll) {
     spreads <- pll[["spread"]]
-    unlist(apply(spreads, 1, sign_spread))
+    pll[["spreads"]] <- NULL
+    cbind(pll, spreads)
+  }
+  bind_candidate <- function(pll) {
+    pivot_candidate <- function(cndt) {
+      values <- as.numeric(cndt$value)
+      names(values) <- cndt$name
+      values
+    }
+    candidates <- lapply(pll[["candidate"]], pivot_candidate)
+    candidates <- Reduce(rbind, candidates)
+    pll[["candidate"]] <- NULL
+    cbind(pll, candidates)
   }
   for (name in names(poll_list)) {
     dta <- import_rcp(poll_list[[name]])
     saveRDS(dta, paste0("_data/json/", name, ".RDS"))
-    dta[["candidate"]] <- NULL
     dta[["undecided"]] <- NULL
-    if (name != "All") {
-      dta[["spread"]] <- extract_spreads(dta)
-    } else {
-      dta[["spread"]] <- NULL
-    }
+    dta <- bind_spreads(dta)
+    dta <- bind_candidate(dta)
     write.csv(dta, paste0("_tables/json/", name, ".csv"))
   }
 }
@@ -134,3 +130,4 @@ export_tables(list(
   Bloomberg = 6797
 ))
 
+temp <- import_rcp(62
