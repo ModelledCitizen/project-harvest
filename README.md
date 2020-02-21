@@ -1,7 +1,5 @@
 # RCP Scrape Functions
-Get data on match-ups between Trump and Democrats.
-
-Scrape RCP polling data, either by URL for HTML tables or by ID number for JSON data.
+Scrape RCP polling data, either by URL for HTML tables or by ID number for JSON data. Focus on match-ups between Trump and Democrats in a hypothetical general election.
 
 ## Structure
 - `_tables` has CSV files.
