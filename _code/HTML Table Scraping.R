@@ -9,6 +9,7 @@
 
 # Packages ----------------------------------------------------------------
 
+library(magrittr)
 library(rvest)
 library(RCurl)
 library(jsonlite)
@@ -34,18 +35,18 @@ fetch_polls <- function(url_list) {
 
 write_save <- function(url_lst, filename) {
   data <- fetch_polls(url_list = url_lst)
-  saveRDS(data, file = paste0("_data/", filename, ".rds"))
+  saveRDS(data, file = paste0("_data/html/", filename, ".rds"))
   for (i in 1:length(data)) {
     write.csv(
       data[[i]],
-      file = paste0("_tables/", filename, "_", names(data)[i], ".csv"),
+      file = paste0("_tables/html/", filename, "_", names(data)[i], ".csv"),
       row.names = F
     )
   }
 }
 
 assign_ids <- function(filename) {
-  data <- readRDS(file = paste0("_data/", filename, ".rds"))
+  data <- readRDS(file = paste0("_data/html/", filename, ".rds"))
   unq <- unique(unlist(sapply(data, function(x) {paste(x$Poll, x$Date)})))
   ids <- data.frame(names = unq, id = sample(1000:9999, length(unq)))
   data <- lapply(data, function(x) {
@@ -61,11 +62,11 @@ assign_ids <- function(filename) {
       x[["names"]] <- NULL
       return(x)
     })
-  saveRDS(data, file = paste0("_data/", filename, ".rds"))
+  saveRDS(data, file = paste0("_data/html/", filename, ".rds"))
   for (i in 1:length(data)) {
     write.csv(
       data[[i]],
-      file = paste0("_tables/", filename, "_", names(data)[i], ".csv"),
+      file = paste0("_tables/html/", filename, "_", names(data)[i], ".csv"),
       row.names = F
     )
     rm(i)
@@ -92,7 +93,7 @@ find_spreads <-
 find_medians <- function(pollname, url_list) {
   write_save(url_lst = url_list, filename = pollname)
   assign_ids(filename = pollname)
-  dta <- readRDS(file = paste0("_data/", pollname, ".rds"))
+  dta <- readRDS(file = paste0("_data/html/", pollname, ".rds"))
   spreads <- lapply(dta, find_spreads)
   sapply(spreads, median)
 }
@@ -125,26 +126,13 @@ all_polls <- read_html(url) %>%
 all_polls %>%
   html_nodes(".mobile_pollster_name") %>%
   xml_remove()
-all_polls %>%
+all_polls <- all_polls %>%
   html_table() %>%
   (function(y) {y[[1]]})
 
-saveRDS(all_polls, file = "_data/all_polls.rds")
+saveRDS(all_polls, file = "_data/html/all_polls.rds")
 write.csv(
   all_polls,
-  file = "_tables/all_polls.csv",
+  file = "_tables/html/all_polls.csv",
   row.names = F
 )
-
-
-
-
-# Just grab the JSON ------------------------------------------------------
-
-raw_polls <- (getURL("https://www.realclearpolitics.com/poll/race/6730/polling_data.json") %>% fromJSON())[["poll"]]
-saveRDS(raw_polls, file = "_data/raw_polls.rds")
-
-
-
-
-(getURL("https://www.realclearpolitics.com/poll/race/6251/polling_data.json") %>% fromJSON())[["poll"]]
