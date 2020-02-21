@@ -81,12 +81,32 @@ get_all_medians <- function(poll_list) {
 }
 
 export_tables <- function(poll_list) {
+  extract_spreads <- function(pll) {
+    sign_spread <- function(sprds) {
+      ot <-
+        switch(
+          sprds[["affiliation"]],
+          Democrat = as.numeric(sprds[["value"]]),
+          Republican = -as.numeric(sprds[["value"]])
+        )
+      if (is.null(ot) & sprds[["name"]] == "Tie") {
+        ot <- 0
+      }
+      ot
+    }
+    spreads <- pll[["spread"]]
+    unlist(apply(spreads, 1, sign_spread))
+  }
   for (name in names(poll_list)) {
     dta <- import_rcp(poll_list[[name]])
     saveRDS(dta, paste0("_data/json/", name, ".RDS"))
     dta[["candidate"]] <- NULL
     dta[["undecided"]] <- NULL
-    dta[["spread"]] <- NULL
+    if (name != "All") {
+      dta[["spread"]] <- extract_spreads(dta)
+    } else {
+      dta[["spread"]] <- NULL
+    }
     write.csv(dta, paste0("_tables/json/", name, ".csv"))
   }
 }
