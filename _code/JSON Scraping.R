@@ -100,6 +100,17 @@ export_tables <- function(flnm, poll_list) {
   merge_ratings <- function(pll) {
     cross <- read.csv("fte_rcp_crosswalk.csv")
     rtngs <- read.csv("pollster-ratings.csv")
+    m1 <-
+      merge(pll,
+            cross,
+            by.x = "pollster",
+            by.y = "rcp_pollster_name",
+            all.x = T)
+    merge(m1,
+          rtngs,
+          by.x = "fte_pollster_ratings_id",
+          by.y = "Pollster.Rating.ID",
+          all.x = T)
   }
   for (name in names(poll_list)) {
     dta <- import_rcp(poll_list[[name]])
@@ -107,6 +118,7 @@ export_tables <- function(flnm, poll_list) {
     dta[["undecided"]] <- NULL
     dta <- bind_spreads(dta)
     dta <- bind_candidate(dta)
+    dta <- merge_ratings(dta)
     write.csv(dta, paste0("_tables/json/", flnm, "_", name, ".csv"))
   }
 }
