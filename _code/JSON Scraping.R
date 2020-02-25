@@ -119,6 +119,7 @@ export_tables <- function(flnm, poll_list) {
     dta <- bind_spreads(dta)
     dta <- bind_candidate(dta)
     dta <- merge_ratings(dta)
+    dta <- dta[order(dta$data_end_date, decreasing = T),]
     dta <-
       rbind(dta[dta$pollster == "rcp_average", ],
             dta[dta$pollster != "rcp_average", ])
