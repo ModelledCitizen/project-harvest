@@ -119,6 +119,9 @@ export_tables <- function(flnm, poll_list) {
     dta <- bind_spreads(dta)
     dta <- bind_candidate(dta)
     dta <- merge_ratings(dta)
+    dta <-
+      rbind(dta[dta$pollster == "rcp_average", ],
+            dta[dta$pollster != "rcp_average", ])
     write.csv(dta, paste0("_tables/json/", flnm, "_", name, ".csv"))
   }
 }
@@ -191,3 +194,4 @@ export_tables(
     Bloomberg = 6997
   )
 )
+
