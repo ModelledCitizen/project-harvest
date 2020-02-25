@@ -80,7 +80,7 @@ get_all_medians <- function(poll_list) {
   medians
 }
 
-export_tables <- function(poll_list) {
+export_tables <- function(flnm, poll_list) {
   bind_spreads <- function(pll) {
     spreads <- pll[["spread"]]
     pll[["spreads"]] <- NULL
@@ -97,13 +97,17 @@ export_tables <- function(poll_list) {
     pll[["candidate"]] <- NULL
     cbind(pll, candidates)
   }
+  merge_ratings <- function(pll) {
+    cross <- read.csv("fte_rcp_crosswalk.csv")
+    rtngs <- read.csv("pollster-ratings.csv")
+  }
   for (name in names(poll_list)) {
     dta <- import_rcp(poll_list[[name]])
-    saveRDS(dta, paste0("_data/json/", name, ".RDS"))
+    saveRDS(dta, paste0("_data/json/", flnm, "_", name, ".RDS"))
     dta[["undecided"]] <- NULL
     dta <- bind_spreads(dta)
     dta <- bind_candidate(dta)
-    write.csv(dta, paste0("_tables/json/", name, ".csv"))
+    write.csv(dta, paste0("_tables/json/", flnm, "_", name, ".csv"))
   }
 }
 
@@ -120,12 +124,58 @@ get_all_medians(
   )
 )
 
-export_tables(list(
-  All = 6730,
-  Warren = 6251,
-  Biden = 6247,
-  Sanders = 6250,
-  Buttigieg = 6872,
-  Klobuchar = 6803,
-  Bloomberg = 6797
-))
+export_tables(
+  "National",
+  list(
+    All = 6730,
+    Warren = 6251,
+    Biden = 6247,
+    Sanders = 6250,
+    Buttigieg = 6872,
+    Klobuchar = 6803,
+    Bloomberg = 6797
+  )
+)
+
+
+### Wisconsin
+export_tables(
+  "Wisconsin",
+  list(
+    All = 6848,
+    Warren = 6852,
+    Biden = 6849,
+    Sanders = 6850,
+    Buttigieg = 6970,
+    Klobuchar = 6854,
+    Bloomberg = 7032
+  )
+)
+
+### Pennsylvania
+export_tables(
+  "Pennsylvania",
+  list(
+    All = 6860,
+    Warren = 6865,
+    Biden = 6861,
+    Sanders = 6862,
+    Buttigieg = 6899,
+    Klobuchar = 7031,
+    Bloomberg = 7030
+  )
+)
+
+### Michigan
+export_tables(
+  "Michigan",
+  list(
+    All = 6835,
+    Warren = 6769,
+    Biden = 6761,
+    Sanders = 6768,
+    Buttigieg = 6909,
+    Klobuchar = 6836,
+    Bloomberg = 6997
+  )
+)

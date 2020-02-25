@@ -1,0 +1,5 @@
+"","id","type","pollster","date","confidenceInterval","sampleSize","marginError","partisan","spread.name","spread.affiliation","spread.value","spread.color","updated","link","data_start_date","data_end_date","pollster_type","name","affiliation","value","color","Buttigieg","Trump"
+"1","6899","rcp_average","rcp_average","2/11 - 2/20","","","","",Buttigieg,Democrat,+2.0,,NA,NA,NA,NA,NA,"Buttigieg","Democrat","+2.0","",45.5,43.5
+"2","126677","poll_rcp_avg","Univ. of Wis/State Journal","2/11 - 2/20","","1249 LV","3.5","",Tie,,,,2020-02-23 12:14:17,"https://news.wisc.edu/battleground-state-poll-1/",2020-02-11,2020-02-20,"1","Tie","","","",44.0,44.0
+"3","126624","poll_rcp_avg","Quinnipiac","2/12 - 2/18","","845 RV","3.4","",Buttigieg,Democrat,+4.0,,2020-02-20 14:54:42,"https://poll.qu.edu/2020-presidential-swing-state-polls/release-detail?ReleaseID=3656",2020-02-12,2020-02-18,"1","Buttigieg","Democrat","+4.0","",47.0,43.0
+"4","121900","poll","Quinnipiac","5/9 - 5/14","","978 RV","4.2","",Buttigieg,Democrat,+1.0,,2019-05-15 13:26:01,"https://poll.qu.edu/pennsylvania/release-detail?ReleaseID=2620",2019-05-09,2019-05-14,"1","Buttigieg","Democrat","+1.0","",45.0,44.0
