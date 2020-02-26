@@ -21,7 +21,9 @@ setwd("~/rcp-scraping")
 
 # Functions ---------------------------------------------------------------
 
-import_rcp <- function(pollno) {
+import_rcp <- function(pollno,
+                       min.date = NULL,
+                       max.date = NULL) {
   require(magrittr)
   require(RCurl)
   require(jsonlite)
@@ -38,11 +40,28 @@ import_rcp <- function(pollno) {
       strptime(rcp_extract[["updated"]], "%a, %d %b %Y %T %z")
     rcp_extract
   }
+  filter_by_date <- function(pll,
+                             min.date = NULL,
+                             max.date = NULL) {
+    if (!is.null(min.date)) {
+      min.date <- as.Date(min.date)
+      pll <- pll[pll$data_end_date >= min.date,]
+    }
+    if (!is.null(max.date)) {
+      max.date <- as.Date(max.date)
+      pll <- pll[pll$data_end_date <= max.date,]
+    }
+    pll
+  }
   poll_url <-
     paste0("https://www.realclearpolitics.com/poll/race/",
            pollno,
            "/polling_data.json")
-  poll_url %>% getURL() %>% extract_poll() %>% clean_poll()
+  poll_url %>%
+    getURL() %>%
+    extract_poll() %>%
+    clean_poll() %>%
+    filter_by_date(min.date, max.date)
 }
 
 find_spread_median <- function(rcp_poll) {
@@ -63,22 +82,29 @@ find_spread_median <- function(rcp_poll) {
     unlist(apply(spreads, 1, sign_spread))
   }
   rcp_poll <-
-    rcp_poll[grep("poll", rcp_poll[["type"]], fixed = T),]
+    rcp_poll[grep("poll", rcp_poll[["type"]], fixed = T), ]
   spreads <- extract_spreads(rcp_poll)
   median(spreads)
 }
 
-get_all_medians <- function(poll_list) {
-  get_median_from_pollno <- function(pollno) {
-    require(magrittr)
-    pollno %>%
-      import_rcp() %>%
-      find_spread_median()
+get_all_medians <-
+  function(poll_list,
+           min.date = NULL,
+           max.date = NULL) {
+    get_median_from_pollno <-
+      function(pollno,
+               min.date = NULL,
+               max.date = NULL) {
+        require(magrittr)
+        pollno %>%
+          import_rcp(min.date, max.date) %>%
+          find_spread_median()
+      }
+    medians <-
+      sapply(poll_list, get_median_from_pollno, min.date, max.date)
+    names(medians) <- names(poll_list)
+    medians
   }
-  medians <- sapply(poll_list, get_median_from_pollno)
-  names(medians) <- names(poll_list)
-  medians
-}
 
 export_tables <- function(flnm, poll_list) {
   bind_spreads <- function(pll) {
@@ -139,6 +165,31 @@ get_all_medians(
     Bloomberg = 6797
   )
 )
+
+get_all_medians(
+  list(
+    Warren = 6251,
+    Biden = 6247,
+    Sanders = 6250,
+    Buttigieg = 6872,
+    Klobuchar = 6803,
+    Bloomberg = 6797
+  ),
+  min.date = "2020-01-01"
+)
+
+get_all_medians(
+  list(
+    Warren = 6251,
+    Biden = 6247,
+    Sanders = 6250,
+    Buttigieg = 6872,
+    Klobuchar = 6803,
+    Bloomberg = 6797
+  ),
+  min.date = "2020-02-01"
+)
+
 
 export_tables(
   "National",
