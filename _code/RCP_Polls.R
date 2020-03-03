@@ -5,7 +5,9 @@
 #  /_/ /_/\____/ .___/_/|_/_/_/ /_/____/  /_____/\__,_/_.___/
 #             /_/
 #
-
+# Author: UnlikelyVolcano
+# Date Updated: 03 March 2020
+# Notes: More updates needed to bring in line with other functions
 
 # Packages ----------------------------------------------------------------
 
@@ -16,7 +18,7 @@ library(jsonlite)
 
 # Working Directory -------------------------------------------------------
 
-setwd("~/rcp-scraping")
+setwd("~/project-harvest")
 
 
 # Functions ---------------------------------------------------------------
@@ -26,9 +28,9 @@ import_rcp <- function(pollno,
                        max.date = NULL) {
   require(magrittr)
   require(RCurl)
-  require(jsonlite)
   extract_poll <-
     function(rcp_json) {
+      require(jsonlite)
       jsonlite::fromJSON(rcp_json)[["poll"]]
     }
   clean_poll <- function(rcp_extract) {
@@ -124,7 +126,7 @@ export_tables <- function(flnm, poll_list) {
     cbind(pll, candidates)
   }
   merge_ratings <- function(pll) {
-    cross <- read.csv("fte_rcp_crosswalk.csv")
+    cross <- read.csv("FTE_RCP_crosswalk.csv")
     rtngs <- read.csv("pollster-ratings.csv")
     m1 <-
       merge(pll,
@@ -140,7 +142,7 @@ export_tables <- function(flnm, poll_list) {
   }
   for (name in names(poll_list)) {
     dta <- import_rcp(poll_list[[name]])
-    saveRDS(dta, paste0("_data/json/", flnm, "_", name, ".RDS"))
+    saveRDS(dta, paste0("_data/polls/RCP_", flnm, "_", name, ".RDS"))
     dta[["undecided"]] <- NULL
     dta <- bind_spreads(dta)
     dta <- bind_candidate(dta)
@@ -149,7 +151,7 @@ export_tables <- function(flnm, poll_list) {
     dta <-
       rbind(dta[dta$pollster == "rcp_average", ],
             dta[dta$pollster != "rcp_average", ])
-    write.csv(dta, paste0("_tables/json/", flnm, "_", name, ".csv"))
+    write.csv(dta, paste0("_tables/polls/RCP_", flnm, "_", name, ".csv"))
   }
 }
 
