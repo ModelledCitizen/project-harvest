@@ -1,15 +1,22 @@
-# RCP Scrape Functions
-Scrape RCP polling data, either by URL for HTML tables or by ID number for JSON data. Focus on match-ups between Trump and Democrats in a hypothetical general election.
+# Project Harvest (Election Scraping)
+Scrape polls and election result data from various news sites and aggregators. 
+
+## Sites
+- [New York Times](https://www.nytimes.com) (NYT)
+- [FiveThirtyEight](https://fivethirtyeight.com) (FTE or 538)
+- [RealClearPolitics](https://www.realclearpolitics.com) (RCP)
 
 ## Structure
-- `_tables` has CSV files.
-- `_data` has RDS files. (`obj <- readRDS("file")`)
+- `_tables` has CSV files for `polls` and `results`.
+- `_data` has RDS files  for `polls` and `results`. (`obj <- readRDS("file")`)
 - `_code` has R scripts:
-    * `HTML Table Scraping.R` uses tables published on RCP's website.
-    * `JSON Scraping.R` uses raw data used to make the tables.
-- `fte_rcp_crosswalk.csv` matches the RCP pollster names to the 538 ratings in `polster-ratings.csv`.
+    * `NYT_Results.R` scrapes election results from NYT given a state.
+    * `RCP_Polls.R` scrapes polling results (and computes median spread) from RCP given an ID.
+- `fte_rcp_crosswalk.csv` matches the RCP pollster names to the FTE ratings in `polster-ratings.csv`.
 
 ## To-Do
-- ~~Procedurally retrieve table URLs given a list of states~~
-- ~~JSON transition obviates need for URLs, just need Poll IDs~~
-- Retrieve more poll types
+- Systematically identify poll IDs from RCP
+- Add more sources
+- Gather polls in a central database
+- Gather results in a central databse
+
