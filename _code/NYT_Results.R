@@ -5,6 +5,7 @@
 #  /_/ /_/\____/ .___/_/|_/_/_/ /_/____/  /_____/\__,_/_.___/
 #             /_/
 #
+# Title: NYT Results
 # Author: UnlikelyVolcano
 # Date Updated: 03 March 2020
 # Notes: First version
@@ -15,7 +16,7 @@ setwd("~/project-harvest")
 
 # Functions ---------------------------------------------------------------
 
-nyt_result <-
+nyt_retrieve <-
   function(state,
            contest = "president",
            party = "democrat") {
@@ -60,7 +61,7 @@ nyt_result <-
   }
 
 nyt_write <- function(state, contest = "president", party = "democrat") {
-  dta <- nyt_result(state, contest, party)
+  dta <- nyt_retrieve(state, contest, party)
   saveRDS(dta, file = sprintf("_data/results/NYT_%s.RDS", state))
   write.csv(dta, file = sprintf("_tables/results/NYT_%s.csv", state))
 }
