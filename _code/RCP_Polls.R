@@ -36,11 +36,11 @@ rcp_retrieve <- function(state,
       require(jsonlite)
       jsonlite::fromJSON(rcp_json)[["poll"]]
     }
-  clean_poll <- function(rcp_extract) {
+  clean_poll <- function(rcp_pll) {
     bind_spreads <- function(pll) {
       spreads <- pll[["spread"]]
       pll[["spreads"]] <- NULL
-      pll <- cbind(pll, spreads)
+      cbind(pll, spreads)
     }
     bind_candidate <- function(pll) {
       pivot_candidate <- function(cndt) {
@@ -49,19 +49,24 @@ rcp_retrieve <- function(state,
         values
       }
       candidates <- lapply(pll[["candidate"]], pivot_candidate)
-      candidates <- Reduce(rbind, candidates)
+      if (nrow(pll) == 1) {
+        candidates <- t(data.frame(candidates[[1]]))
+      } else {
+        candidates <- Reduce(rbind, candidates)
+      }
       pll[["candidate"]] <- NULL
-      pll <- cbind(pll, candidates)
+      cbind(pll, candidates)
     }
-    rcp_extract[["data_start_date"]] <-
-      as.Date(rcp_extract[["data_start_date"]], "%Y/%m/%d")
-    rcp_extract[["data_end_date"]] <-
-      as.Date(rcp_extract[["data_end_date"]], "%Y/%m/%d")
-    rcp_extract[["updated"]] <-
-      strptime(rcp_extract[["updated"]], "%a, %d %b %Y %T %z")
-    rcp_extract[["undecided"]] <- NULL
-    rcp_extract[order(rcp_extract$data_end_date, decreasing = T),]
-    rcp_extract %>% bind_spreads() %>% bind_candidate()
+    rcp_pll[["data_start_date"]] <-
+      as.Date(rcp_pll[["data_start_date"]], "%Y/%m/%d")
+    rcp_pll[["data_end_date"]] <-
+      as.Date(rcp_pll[["data_end_date"]], "%Y/%m/%d")
+    rcp_pll[["updated"]] <-
+      strptime(rcp_pll[["updated"]], "%a, %d %b %Y %T %z")
+    rcp_pll[["undecided"]] <- NULL
+    rcp_pll <-
+      rcp_pll[order(rcp_pll$data_end_date, decreasing = T),]
+    rcp_pll %>% bind_spreads() %>% bind_candidate()
   }
   make_url(state, contest, party) %>%
     getURL() %>%
@@ -107,3 +112,9 @@ for (i in 1:nrow(poll_list)) {
 
 rm(i, poll_list)
 
+
+
+
+tmp <- rcp_retrieve("Alabama")
+
+clean_poll(tmp)
