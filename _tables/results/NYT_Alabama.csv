@@ -1,16 +1,16 @@
 "","candidate_id","candidate_key","first_name","last_name","order","name_display","party_id","incumbent","runoff","winner","votes","percent","percent_display","electoral_votes","has_image","link","pronoun","delegates","total_delegates","date_delegates"
-"1","biden-1036","bidenj","Joseph R.","Biden",1,"Joseph R. Biden Jr.","democrat",FALSE,FALSE,TRUE,73881,61.8,"61.8",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/joe-biden.html","he",6,152,99
-"2","sanders-1445","sandersb","Bernie","Sanders",2,"Bernie Sanders","democrat",FALSE,FALSE,FALSE,19741,16.5,"16.5",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/bernie-sanders.html","he",0,109,49
-"3","bloomberg-32324","bloombergm","Michael R.","Bloomberg",5,"Michael R. Bloomberg","democrat",FALSE,FALSE,FALSE,13816,11.6,"11.6",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/michael-bloomberg.html","he",0,7,7
-"4","warren-62244","warrene","Elizabeth","Warren",3,"Elizabeth Warren","democrat",FALSE,FALSE,FALSE,7117,6,"6.0",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/elizabeth-warren.html","she",0,12,4
-"5","steyer-67935","steyert","Tom","Steyer",8,"Tom Steyer","democrat",FALSE,FALSE,FALSE,1861,1.6,"1.6",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/tom-steyer.html","he",0,0,0
-"6","bennet-59911","bennetm","Michael","Bennet",10,"Michael Bennet","democrat",FALSE,FALSE,FALSE,571,0.5,"0.5",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/michael-bennet.html","he",0,0,0
-"7","buttigieg-67933","buttigiegp","Pete","Buttigieg",4,"Pete Buttigieg","democrat",FALSE,FALSE,FALSE,556,0.5,"0.5",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/pete-buttigieg.html","he",0,26,0
-"8","klobuchar-51526","klobuchara","Amy","Klobuchar",6,"Amy Klobuchar","democrat",FALSE,FALSE,FALSE,330,0.3,"0.3",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/amy-klobuchar.html","she",0,7,0
-"9","yang-67936","yanga","Andrew","Yang",7,"Andrew Yang","democrat",FALSE,FALSE,FALSE,246,0.2,"0.2",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/andrew-yang.html","he",0,0,0
-"10","gabbard-62589","gabbardt","Tulsi","Gabbard",9,"Tulsi Gabbard","democrat",FALSE,FALSE,FALSE,238,0.2,"0.2",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/tulsi-gabbard.html","she",0,1,1
-"11","booker-63133","bookerc","Cory","Booker",13,"Cory Booker","democrat",FALSE,FALSE,FALSE,182,0.2,"0.2",0,"TRUE","","he",0,0,0
-"12","delaney-61562","delaneyj","John","Delaney",12,"John Delaney","democrat",FALSE,FALSE,FALSE,80,0.1,"0.1",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/john-delaney.html","he",0,0,0
-"13","williamson-63672","williamsonm","Marianne","Williamson",14,"Marianne Williamson","democrat",FALSE,FALSE,FALSE,60,0.1,"0.1",0,"","","",0,0,0
-"14","castro-67934","castroj","JuliÃ¡n","Castro",15,"JuliÃ¡n Castro","democrat",FALSE,FALSE,FALSE,44,0,"0.0",0,"FALSE","","he",0,0,0
-"15","uncommitted-100004-1-p","uncommitted","","Uncommitted",16,"Uncommitted","democrat",FALSE,FALSE,FALSE,749,0.6,"0.6",0,"FALSE","",NA,0,0,0
+"1","biden-1036","bidenj","Joseph R.","Biden",1,"Joseph R. Biden Jr.","democrat",FALSE,FALSE,TRUE,97138,61.6,"61.6",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/joe-biden.html","he",6,152,99
+"2","sanders-1445","sandersb","Bernie","Sanders",2,"Bernie Sanders","democrat",FALSE,FALSE,FALSE,24728,15.7,"15.7",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/bernie-sanders.html","he",0,112,52
+"3","bloomberg-32324","bloombergm","Michael R.","Bloomberg",5,"Michael R. Bloomberg","democrat",FALSE,FALSE,FALSE,17164,10.9,"10.9",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/michael-bloomberg.html","he",0,7,7
+"4","warren-62244","warrene","Elizabeth","Warren",3,"Elizabeth Warren","democrat",FALSE,FALSE,FALSE,8799,5.6,"5.6",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/elizabeth-warren.html","she",0,12,4
+"5","booker-63133","bookerc","Cory","Booker",13,"Cory Booker","democrat",FALSE,FALSE,FALSE,4247,2.7,"2.7",0,"TRUE","","he",0,0,0
+"6","steyer-67935","steyert","Tom","Steyer",8,"Tom Steyer","democrat",FALSE,FALSE,FALSE,1930,1.2,"1.2",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/tom-steyer.html","he",0,0,0
+"7","bennet-59911","bennetm","Michael","Bennet",10,"Michael Bennet","democrat",FALSE,FALSE,FALSE,749,0.5,"0.5",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/michael-bennet.html","he",0,0,0
+"8","buttigieg-67933","buttigiegp","Pete","Buttigieg",4,"Pete Buttigieg","democrat",FALSE,FALSE,FALSE,634,0.4,"0.4",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/pete-buttigieg.html","he",0,26,0
+"9","klobuchar-51526","klobuchara","Amy","Klobuchar",6,"Amy Klobuchar","democrat",FALSE,FALSE,FALSE,385,0.2,"0.2",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/amy-klobuchar.html","she",0,7,0
+"10","yang-67936","yanga","Andrew","Yang",7,"Andrew Yang","democrat",FALSE,FALSE,FALSE,310,0.2,"0.2",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/andrew-yang.html","he",0,0,0
+"11","gabbard-62589","gabbardt","Tulsi","Gabbard",9,"Tulsi Gabbard","democrat",FALSE,FALSE,FALSE,292,0.2,"0.2",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/tulsi-gabbard.html","she",0,1,1
+"12","delaney-61562","delaneyj","John","Delaney",12,"John Delaney","democrat",FALSE,FALSE,FALSE,107,0.1,"0.1",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/john-delaney.html","he",0,0,0
+"13","williamson-63672","williamsonm","Marianne","Williamson",14,"Marianne Williamson","democrat",FALSE,FALSE,FALSE,79,0.1,"0.1",0,"","","",0,0,0
+"14","castro-67934","castroj","JuliÃ¡n","Castro",15,"JuliÃ¡n Castro","democrat",FALSE,FALSE,FALSE,57,0,"0.0",0,"FALSE","","he",0,0,0
+"15","uncommitted-100004-1-p","uncommitted","","Uncommitted",16,"Uncommitted","democrat",FALSE,FALSE,FALSE,954,0.6,"0.6",0,"FALSE","",NA,0,0,0
