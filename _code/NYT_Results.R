@@ -71,13 +71,12 @@ nyt_retrieve <-
       require(jsonlite)
       fromJSON(jsn)[["data"]][["races"]][["candidates"]][[1]]
     }
-    make_url(state, contest, party) %>%
-      getURL() %>%
-      extract_localities()
+    jsn <- make_url(state, contest, party) %>% getURL()
+    list(localities = extract_localities(jsn), toplines = extract_toplines(jsn))
   }
 
 nyt_write <- function(state, contest = "president", party = "democrat") {
-  dta <- nyt_retrieve(state, contest, party)
+  dta <- nyt_retrieve(state, contest, party)[["localities"]]
   saveRDS(dta, file = sprintf("_data/results/NYT_%s.RDS", state))
   write.csv(dta, file = sprintf("_tables/results/NYT_%s.csv", state))
 }
