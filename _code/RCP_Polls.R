@@ -5,10 +5,11 @@
 #  /_/ /_/\____/ .___/_/|_/_/_/ /_/____/  /_____/\__,_/_.___/
 #             /_/
 #
-# Title: RCP Polls
-# Author: UnlikelyVolcano
-# Date Updated: 03 March 2020
-# Notes: Refactoring
+#   Title: RCP Polls
+#  Author: UnlikelyVolcano
+# Updated: 03 March 2020
+#   Notes: Simplified and streamlined to match NYT,
+#          but need to improve ID retrieval.
 
 # Working Directory -------------------------------------------------------
 

@@ -5,10 +5,10 @@
 #  /_/ /_/\____/ .___/_/|_/_/_/ /_/____/  /_____/\__,_/_.___/
 #             /_/
 #
-# Title: NYT Results
-# Author: UnlikelyVolcano
-# Date Updated: 03 March 2020
-# Notes: First version
+#   Title: NYT Results
+#  Author: UnlikelyVolcano
+# Updated: 03 March 2020
+#   Notes: Revised to query Wikipedia less frequently
 
 # Working Directory -------------------------------------------------------
 
@@ -23,27 +23,37 @@ nyt_retrieve <-
     require(magrittr)
     require(RCurl)
     make_url <- function(state, contest, party) {
-      get_primary_date <- function(state) {
+      get_election_date <- function(state) {
         get_calendar <- function() {
-          require(rvest)
-          cal <-
-            read_html(
-              "https://en.wikipedia.org/w/index.php?title=2020_Democratic_Party_presidential_primaries&oldid=943803552"
-            ) %>%
-            html_nodes("#mw-content-text > div > table:nth-child(124)") %>%
-            html_table(fill = T)
-          cal <- cal[[1]]
-          cal <-
-            cal[cal$`Primaries/caucuses` != "Total", c("Date", "Primaries/caucuses")]
-          cal$Date <- as.Date(strptime(cal$Date, "%B %e"))
-          cal$`Primaries/caucuses` <-
-            gsub(" caucuses| primary", "", cal$`Primaries/caucuses`)
+          if ("primary_calendar.csv" %in% list.files()) {
+            cal <- read.csv("primary_calendar.csv")
+          } else {
+            require(rvest)
+            cal <-
+              read_html(
+                "https://en.wikipedia.org/w/index.php?title=2020_Democratic_Party_presidential_primaries&oldid=943803552"
+              ) %>%
+              html_nodes("#mw-content-text > div > table:nth-child(124)") %>%
+              html_table(fill = T)
+            cal <- cal[[1]]
+            names(cal)[names(cal) == "Primaries/caucuses"] <-
+              "State"
+            cal <-
+              cal[cal$State != "Total", c("Date", "State")]
+            cal$Date <- as.Date(strptime(cal$Date, "%B %e"))
+            cal$State <- gsub("\\(|\\)", "", cal$State)
+            cal$State <- gsub(" caucuses| primary", "", cal$State)
+            cal$State <-
+              gsub(" firehouse| voting period ends", "", cal$State)
+            cal$State <- gsub(" party-run", "", cal$State)
+            write.csv(cal, "primary_calendar.csv", row.names = F)
+          }
           cal
         }
         cal <- get_calendar()
-        cal$Date[cal$`Primaries/caucuses` == state]
+        cal$Date[cal$State == state]
       }
-      date <- get_primary_date(state)
+      date <- get_election_date(state)
       state <- gsub(" ", "-", tolower(state))
       sprintf(
         "https://int.nyt.com/applications/elections/2020/data/api/%s/%s/%s/%s.json",
@@ -69,12 +79,19 @@ nyt_write <- function(state, contest = "president", party = "democrat") {
 
 # Output ------------------------------------------------------------------
 
+# 2020-02-03
 nyt_write("Iowa")
+
+# 2020-02-11
 nyt_write("New Hampshire")
+
+# 2020-02-22
 nyt_write("Nevada")
+
+# 2020-02-29
 nyt_write("South Carolina")
 
-#nyt_write("American Samoa")
+# 2020-03-03
 nyt_write("Alabama")
 nyt_write("Arkansas")
 nyt_write("California")

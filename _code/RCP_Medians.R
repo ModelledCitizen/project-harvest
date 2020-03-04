@@ -5,10 +5,10 @@
 #  /_/ /_/\____/ .___/_/|_/_/_/ /_/____/  /_____/\__,_/_.___/
 #             /_/
 #
-# Title: RCP Medians
-# Author: UnlikelyVolcano
-# Date Updated: 03 March 2020
-# Notes: Legacy code
+#   Title: RCP Medians
+#  Author: UnlikelyVolcano
+# Updated: 03 March 2020
+#   Notes: Legacy code
 
 # Working Directory -------------------------------------------------------
 
