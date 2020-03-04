@@ -8,7 +8,7 @@
 #   Title: NYT Results
 #  Author: UnlikelyVolcano
 # Updated: 03 March 2020
-#   Notes: Revised to query Wikipedia less frequently
+#   Notes: Revised to gather county level results
 
 # Working Directory -------------------------------------------------------
 
@@ -65,7 +65,7 @@ nyt_retrieve <-
     }
     extract_result <- function(jsn) {
       require(jsonlite)
-      fromJSON(jsn)[["data"]][["races"]][["candidates"]][[1]]
+      fromJSON(jsn)[["data"]][["races"]][["counties"]][[1]]
     }
     make_url(state, contest, party) %>% getURL() %>% extract_result()
   }

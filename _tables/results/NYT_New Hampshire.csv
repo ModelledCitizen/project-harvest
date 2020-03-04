@@ -1,35 +1,11 @@
-"","candidate_id","candidate_key","first_name","last_name","order","name_display","party_id","incumbent","runoff","winner","votes","percent","percent_display","electoral_votes","has_image","link","pronoun","delegates","total_delegates"
-"1","sanders-1445","sandersb","Bernie","Sanders",2,"Bernie Sanders","democrat",FALSE,FALSE,TRUE,76324,25.7,"25.7",0,TRUE,"https://www.nytimes.com/interactive/2020/us/elections/bernie-sanders.html","he",9,21
-"2","buttigieg-67933","buttigiegp","Pete","Buttigieg",4,"Pete Buttigieg","democrat",FALSE,FALSE,FALSE,72457,24.4,"24.4",0,TRUE,"https://www.nytimes.com/interactive/2020/us/elections/pete-buttigieg.html","he",9,22
-"3","klobuchar-51526","klobuchara","Amy","Klobuchar",6,"Amy Klobuchar","democrat",FALSE,FALSE,FALSE,58796,19.8,"19.8",0,TRUE,"https://www.nytimes.com/interactive/2020/us/elections/amy-klobuchar.html","she",6,7
-"4","warren-62244","warrene","Elizabeth","Warren",3,"Elizabeth Warren","democrat",FALSE,FALSE,FALSE,27387,9.2,"9.2",0,TRUE,"https://www.nytimes.com/interactive/2020/us/elections/elizabeth-warren.html","she",0,8
-"5","biden-1036","bidenj","Joseph R.","Biden",1,"Joseph R. Biden Jr.","democrat",FALSE,FALSE,FALSE,24921,8.4,"8.4",0,TRUE,"https://www.nytimes.com/interactive/2020/us/elections/joe-biden.html","he",0,6
-"6","steyer-67935","steyert","Tom","Steyer",8,"Tom Steyer","democrat",FALSE,FALSE,FALSE,10727,3.6,"3.6",0,TRUE,"https://www.nytimes.com/interactive/2020/us/elections/tom-steyer.html","he",0,0
-"7","gabbard-62589","gabbardt","Tulsi","Gabbard",9,"Tulsi Gabbard","democrat",FALSE,FALSE,FALSE,9655,3.3,"3.3",0,TRUE,"https://www.nytimes.com/interactive/2020/us/elections/tulsi-gabbard.html","she",0,0
-"8","yang-67936","yanga","Andrew","Yang",7,"Andrew Yang","democrat",FALSE,FALSE,FALSE,8315,2.8,"2.8",0,TRUE,"https://www.nytimes.com/interactive/2020/us/elections/andrew-yang.html","he",0,0
-"9","total-write-ins-100008","total_write_ins",NA,"Total Write-ins",13,"Total Write-ins","democrat",FALSE,FALSE,FALSE,4449,1.5,"1.5",0,FALSE,"",NA,0,0
-"10","patrick-51516","patrickd","Deval","Patrick",11,"Deval Patrick","democrat",FALSE,FALSE,FALSE,1266,0.4,"0.4",0,TRUE,"https://www.nytimes.com/interactive/2020/us/elections/deval-patrick.html","he",0,0
-"11","bennet-59911","bennetm","Michael","Bennet",10,"Michael Bennet","democrat",FALSE,FALSE,FALSE,963,0.3,"0.3",0,TRUE,"https://www.nytimes.com/interactive/2020/us/elections/michael-bennet.html","he",0,0
-"12","booker-63133","bookerc","Cory","Booker",14,"Cory Booker","democrat",FALSE,FALSE,FALSE,155,0.1,"0.1",0,FALSE,"","he",0,0
-"13","sestak-51545","sestakj","Joe","Sestak",15,"Joe Sestak","democrat",FALSE,FALSE,FALSE,143,0,"0.0",0,FALSE,"",NA,0,0
-"14","harris-64984","harrisk","Kamala","Harris",16,"Kamala Harris","democrat",FALSE,FALSE,FALSE,104,0,"0.0",0,FALSE,"",NA,0,0
-"15","williamson-63672","williamsonm","Marianne","Williamson",17,"Marianne Williamson","democrat",FALSE,FALSE,FALSE,95,0,"0.0",0,FALSE,"",NA,0,0
-"16","burke-64548","burkes","Steve","Burke",18,"Steve Burke","democrat",FALSE,FALSE,FALSE,85,0,"0.0",0,FALSE,"",NA,0,0
-"17","delaney-61562","delaneyj","John","Delaney",12,"John Delaney","democrat",FALSE,FALSE,FALSE,82,0,"0.0",0,TRUE,"https://www.nytimes.com/interactive/2020/us/elections/john-delaney.html","he",0,0
-"18","castro-67934","castroj","JuliÃ¡n","Castro",19,"JuliÃ¡n Castro","democrat",FALSE,FALSE,FALSE,81,0,"0.0",0,FALSE,"","he",0,0
-"19","wells-67946","wellsr","Robby","Wells",20,"Robby Wells","democrat",FALSE,FALSE,FALSE,81,0,"0.0",0,FALSE,"",NA,0,0
-"20","koos-57722","koost","Tom","Koos",21,"Tom Koos","democrat",FALSE,FALSE,FALSE,70,0,"0.0",0,FALSE,"",NA,0,0
-"21","ellinger-67944","ellingerm","Michael","Ellinger",22,"Michael Ellinger","democrat",FALSE,FALSE,FALSE,65,0,"0.0",0,FALSE,"",NA,0,0
-"22","bullock-61839","bullocks","Steve","Bullock",23,"Steve Bullock","democrat",FALSE,FALSE,FALSE,63,0,"0.0",0,FALSE,"",NA,0,0
-"23","hewes-57725","hewesh","Henry","Hewes",24,"Henry Hewes","democrat",FALSE,FALSE,FALSE,54,0,"0.0",0,FALSE,"",NA,0,0
-"24","thistle-64557","thistled","David","Thistle",25,"David Thistle","democrat",FALSE,FALSE,FALSE,53,0,"0.0",0,FALSE,"",NA,0,0
-"25","sloan-63747","sloans","Sam","Sloan",26,"Sam Sloan","democrat",FALSE,FALSE,FALSE,33,0,"0.0",0,FALSE,"",NA,0,0
-"26","boyd-6588","boydm","Mosie","Boyd",27,"Mosie Boyd","democrat",FALSE,FALSE,FALSE,32,0,"0.0",0,FALSE,"",NA,0,0
-"27","gleiberman-67948","gleibermanb","Ben","Gleiberman",28,"Ben Gleiberman","democrat",FALSE,FALSE,FALSE,31,0,"0.0",0,FALSE,"",NA,0,0
-"28","torgesen-67937","torgesent","Thomas","Torgesen",29,"Thomas Torgesen","democrat",FALSE,FALSE,FALSE,30,0,"0.0",0,FALSE,"",NA,0,0
-"29","greenstein-64546","greensteinm","Mark","Greenstein",30,"Mark Greenstein","democrat",FALSE,FALSE,FALSE,29,0,"0.0",0,FALSE,"",NA,0,0
-"30","krichevsky-67953","krichevskyr","Rita","Krichevsky",31,"Rita Krichevsky","democrat",FALSE,FALSE,FALSE,23,0,"0.0",0,FALSE,"",NA,0,0
-"31","kraus-67950","krausl","Lorenz","Kraus",32,"Lorenz Kraus","democrat",FALSE,FALSE,FALSE,21,0,"0.0",0,FALSE,"",NA,0,0
-"32","de-la-fuente-iii-67963","de_la_fuente_iiir","Roque","De La Fuente III",33,"Roque De La Fuente III","democrat",FALSE,FALSE,FALSE,12,0,"0.0",0,FALSE,"",NA,0,0
-"33","dunlap-67952","dunlapj","Jason","Dunlap",34,"Jason Dunlap","democrat",FALSE,FALSE,FALSE,11,0,"0.0",0,FALSE,"",NA,0,0
-"34","moroz-64554","morozr","Raymond","Moroz",35,"Raymond Moroz","democrat",FALSE,FALSE,FALSE,9,0,"0.0",0,FALSE,"",NA,0,0
+"","fips","name","votes","reporting","precincts","results.sandersb","results.buttigiegp","results.klobuchara","results.bidenj","results.warrene","results.steyert","results.gabbardt","results.yanga","results.total_write_ins","results.bennetm","results.ellingerm","results.patrickd","results.sestakj","results.bookerc","results.harrisk","results.krichevskyr","results.koost","results.krausl","results.boydm","results.bullocks","results.burkes","results.castroj","results.delaneyj","results.hewesh","results.williamsonm","results.dunlapj","results.gleibermanb","results.sloans","results.torgesent","results.wellsr","results.de_la_fuente_iiir","results.greensteinm","results.morozr","results.thistled"
+"1","33001","Belknap",11459,16,16, 2688, 2812, 2438, 1126,  840,  479,  410,  257,  230,   48,   38,   35,   15,    8,    6,    4,    3,    3,    2,    2,    2,    2,    2,    2,    2,    1,    1,    1,    1,    1,    0,    0,    0,    0
+"2","33003","Carroll",11136,19,19, 2605, 2813, 2464, 1020,  903,  323,  403,  229,  252,   31,    0,   43,    5,   13,    8,    0,    1,    2,    2,    1,    1,    3,    2,    2,    6,    0,    0,    0,    1,    1,    1,    0,    0,    1
+"3","33005","Cheshire",19012,27,27, 5973, 4053, 3616, 1264, 1816,  651,  582,  597,  270,   43,    9,   54,    9,    6,   10,    1,    4,    0,    1,    4,    9,    7,    2,    6,    7,    1,    4,    0,    4,    0,    1,    3,    0,    5
+"4","33007","Coos", 5354,25,25, 1561, 1094,  909,  566,  395,  231,  206,  149,  145,    7,    0,   17,   15,    4,    3,    1,    5,    0,    1,    1,    5,    1,    3,   14,    6,    0,    7,    1,    2,    0,    0,    1,    0,    4
+"5","33009","Grafton",24347,41,41, 6598, 5815, 4274, 1685, 3322,  548,  559,  872,  456,   55,    5,   85,    5,   13,    6,    0,    2,    2,    0,    7,    6,    2,    4,    2,    4,    0,    5,    1,    3,    2,    1,    0,    1,    7
+"6","33011","Hillsborough",84032,50,50,21604,20523,16698, 7357, 7243, 3165, 3051, 2382,  937,  302,    5,  393,   46,   36,   27,   13,   22,    9,    5,   19,   21,   30,   24,    7,   29,    3,    8,   14,    5,   17,    1,   11,    5,   20
+"7","33013","Merrimack",35237,38,38, 8632, 8465, 7852, 2862, 3171, 1332, 1162,  898,  394,  182,    0,  164,   15,   17,    7,    1,    7,    1,    5,   12,    6,    7,   13,    1,    5,    1,    1,    8,    3,    7,    1,    2,    0,    3
+"8","33015","Rockingham",67413,41,41,15331,17936,13743, 6071, 5930, 2660, 2083, 1740, 1132,  177,    4,  324,   14,   44,   26,    0,   13,    4,   14,   11,   24,   24,   15,   15,   29,    1,    3,    5,    8,   12,    5,    6,    2,    7
+"9","33017","Strafford",29780,27,27, 8912, 6758, 5176, 2246, 2929, 1074,  885,  953,  483,   84,    3,  128,   13,   11,   11,    2,   10,    0,    2,    4,    6,    4,   16,    2,    5,    4,    2,    2,    2,   40,    1,    6,    1,    5
+"10","33019","Sullivan", 8852,17,17, 2420, 2188, 1626,  724,  838,  264,  314,  238,  150,   34,    1,   23,    6,    3,    0,    1,    3,    0,    0,    2,    5,    1,    1,    3,    2,    0,    0,    1,    1,    1,    1,    0,    0,    1

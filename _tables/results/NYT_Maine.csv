@@ -1,13 +1,17 @@
-"","candidate_id","candidate_key","first_name","last_name","order","name_display","party_id","incumbent","runoff","winner","votes","percent","percent_display","electoral_votes","has_image","link","pronoun","delegates","total_delegates","date_delegates"
-"1","biden-1036","bidenj","Joseph R.","Biden",1,"Joseph R. Biden Jr.","democrat",FALSE,FALSE,FALSE,62937,33.9,"33.9",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/joe-biden.html","he",7,404,351
-"2","sanders-1445","sandersb","Bernie","Sanders",2,"Bernie Sanders","democrat",FALSE,FALSE,FALSE,61213,32.9,"32.9",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/bernie-sanders.html","he",7,340,280
-"3","warren-62244","warrene","Elizabeth","Warren",3,"Elizabeth Warren","democrat",FALSE,FALSE,FALSE,29775,16,"16.0",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/elizabeth-warren.html","she",0,36,28
-"4","bloomberg-32324","bloombergm","Michael R.","Bloomberg",5,"Michael R. Bloomberg","democrat",FALSE,FALSE,FALSE,22226,12,"12.0",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/michael-bloomberg.html","he",0,12,12
-"5","buttigieg-67933","buttigiegp","Pete","Buttigieg",4,"Pete Buttigieg","democrat",FALSE,FALSE,FALSE,3914,2.1,"2.1",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/pete-buttigieg.html","he",0,26,0
-"6","klobuchar-51526","klobuchara","Amy","Klobuchar",6,"Amy Klobuchar","democrat",FALSE,FALSE,FALSE,2609,1.4,"1.4",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/amy-klobuchar.html","she",0,7,0
-"7","gabbard-62589","gabbardt","Tulsi","Gabbard",9,"Tulsi Gabbard","democrat",FALSE,FALSE,FALSE,1674,0.9,"0.9",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/tulsi-gabbard.html","she",0,1,1
-"8","yang-67936","yanga","Andrew","Yang",7,"Andrew Yang","democrat",FALSE,FALSE,FALSE,607,0.3,"0.3",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/andrew-yang.html","he",0,0,0
-"9","steyer-67935","steyert","Tom","Steyer",8,"Tom Steyer","democrat",FALSE,FALSE,FALSE,331,0.2,"0.2",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/tom-steyer.html","he",0,0,0
-"10","patrick-51516","patrickd","Deval","Patrick",12,"Deval Patrick","democrat",FALSE,FALSE,FALSE,223,0.1,"0.1",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/deval-patrick.html","he",0,0,0
-"11","booker-63133","bookerc","Cory","Booker",14,"Cory Booker","democrat",FALSE,FALSE,FALSE,193,0.1,"0.1",0,"TRUE","","he",0,0,0
-"12","williamson-63672","williamsonm","Marianne","Williamson",10,"Marianne Williamson","democrat",FALSE,FALSE,FALSE,184,0.1,"0.1",0,"","","",0,0,0
+"","fips","name","votes","reporting","precincts","results.bidenj","results.sandersb","results.bloombergm","results.warrene","results.buttigiegp","results.gabbardt","results.klobuchara","results.yanga","results.patrickd","results.steyert","results.williamsonm","results.bookerc"
+"1","23001","Androscoggin",11543,24,24, 4043, 3579, 1752, 1490,  244,  160,  139,   48,   35,   21,   18,   14
+"2","23003","Aroostook", 4735,45,67, 2295, 1117,  773,  335,   74,   30,   44,   25,    9,   11,   10,   12
+"3","23005","Cumberland",64449,47,49,20278,21798, 6655,12566, 1453,  414,  934,  138,   61,   67,   36,   49
+"4","23007","Franklin", 2765,15,22,  912, 1070,  299,  332,   38,   33,   32,   12,   16,   11,    5,    5
+"5","23009","Hancock", 8850,35,42, 2805, 3083,  947, 1635,  158,   31,  114,   36,    2,   19,   10,   10
+"6","23011","Kennebec",13141,26,32, 4758, 4027, 1723, 1927,  260,  153,  171,   56,   14,   25,   16,   11
+"7","23013","Knox", 7364,16,18, 2401, 2429,  834, 1418,   97,   57,   92,   21,    5,    1,    4,    5
+"8","23015","Lincoln", 5210,15,19, 1852, 1655,  652,  810,   97,   42,   64,   12,   16,    5,    1,    4
+"9","23017","Oxford", 5682,33,37, 2073, 1974,  678,  672,   88,   77,   64,   29,    6,    8,    7,    6
+"10","23019","Penobscot",15682,43,61, 5203, 5390, 2027, 2114,  319,  136,  270,   84,   23,   69,   24,   23
+"11","23021","Piscataquis", 1138,11,20,  421,  354,  186,  118,   16,    7,   13,    6,    5,    3,    5,    4
+"12","23023","Sagadahoc", 6743,10,10, 2275, 2054,  830, 1245,  128,   69,   93,   14,    3,   16,    3,   13
+"13","23025","Somerset", 3261,22,34, 1208,  982,  561,  298,   74,   43,   38,   28,    4,   10,   10,    5
+"14","23027","Waldo", 6064,25,28, 1809, 2403,  633,  971,   96,   42,   67,   15,    3,   10,    7,    8
+"15","23029","Washington", 1852,24,46,  691,  564,  272,  231,   35,   17,   26,    6,    2,    2,    2,    4
+"16","23031","York",31848,41,43,11445,10100, 4076, 4212,  848,  405,  512,  101,   23,   73,   31,   22

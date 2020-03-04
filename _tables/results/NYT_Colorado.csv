@@ -1,18 +1,65 @@
-"","candidate_id","candidate_key","first_name","last_name","order","name_display","party_id","incumbent","runoff","winner","votes","percent","percent_display","electoral_votes","has_image","link","pronoun","delegates","total_delegates","date_delegates"
-"1","sanders-1445","sandersb","Bernie","Sanders",2,"Bernie Sanders","democrat",FALSE,FALSE,TRUE,273677,36.2,"36.2",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/bernie-sanders.html","he",13,340,280
-"2","biden-1036","bidenj","Joseph R.","Biden",1,"Joseph R. Biden Jr.","democrat",FALSE,FALSE,FALSE,175820,23.2,"23.2",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/joe-biden.html","he",5,404,351
-"3","bloomberg-32324","bloombergm","Michael R.","Bloomberg",5,"Michael R. Bloomberg","democrat",FALSE,FALSE,FALSE,157755,20.8,"20.8",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/michael-bloomberg.html","he",5,12,12
-"4","warren-62244","warrene","Elizabeth","Warren",3,"Elizabeth Warren","democrat",FALSE,FALSE,FALSE,130380,17.2,"17.2",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/elizabeth-warren.html","she",3,36,28
-"5","gabbard-62589","gabbardt","Tulsi","Gabbard",9,"Tulsi Gabbard","democrat",FALSE,FALSE,FALSE,8586,1.1,"1.1",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/tulsi-gabbard.html","she",0,1,1
-"6","yang-67936","yanga","Andrew","Yang",7,"Andrew Yang","democrat",FALSE,FALSE,FALSE,3435,0.5,"0.5",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/andrew-yang.html","he",0,0,0
-"7","steyer-67935","steyert","Tom","Steyer",8,"Tom Steyer","democrat",FALSE,FALSE,FALSE,3174,0.4,"0.4",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/tom-steyer.html","he",0,0,0
-"8","booker-63133","bookerc","Cory","Booker",14,"Cory Booker","democrat",FALSE,FALSE,FALSE,1127,0.1,"0.1",0,"TRUE","","he",0,0,0
-"9","de-la-fuente-20073339-6-p","de_la_fuenter","Roque","De La Fuente",15,"Roque De La Fuente","democrat",FALSE,FALSE,FALSE,1031,0.1,"0.1",0,"FALSE","",NA,0,0,0
-"10","williamson-63672","williamsonm","Marianne","Williamson",10,"Marianne Williamson","democrat",FALSE,FALSE,FALSE,977,0.1,"0.1",0,"","","",0,0,0
-"11","krichevsky-20073333-6-p","krichevskyr","Rita","Krichevsky",16,"Rita Krichevsky","democrat",FALSE,FALSE,FALSE,412,0.1,"0.1",0,"FALSE","",NA,0,0,0
-"12","wells-20073324-6-p","wellsr","Robby","Wells",17,"Robby Wells","democrat",FALSE,FALSE,FALSE,303,0,"0.0",0,"FALSE","",NA,0,0,0
-"13","patrick-51516","patrickd","Deval","Patrick",12,"Deval Patrick","democrat",FALSE,FALSE,FALSE,201,0,"0.0",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/deval-patrick.html","he",0,0,0
-"14","bennet-59911","bennetm","Michael","Bennet",11,"Michael Bennet","democrat",FALSE,FALSE,FALSE,26,0,"0.0",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/michael-bennet.html","he",0,0,0
-"15","klobuchar-51526","klobuchara","Amy","Klobuchar",6,"Amy Klobuchar","democrat",FALSE,FALSE,FALSE,0,0,"0.0",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/amy-klobuchar.html","she",0,7,0
-"16","buttigieg-67933","buttigiegp","Pete","Buttigieg",4,"Pete Buttigieg","democrat",FALSE,FALSE,FALSE,0,0,"0.0",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/pete-buttigieg.html","he",0,26,0
-"17","delaney-61562","delaneyj","John","Delaney",13,"John Delaney","democrat",FALSE,FALSE,FALSE,0,0,"0.0",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/john-delaney.html","he",0,0,0
+"","fips","name","votes","reporting","precincts","results.sandersb","results.bidenj","results.bloombergm","results.warrene","results.gabbardt","results.yanga","results.steyert","results.de_la_fuenter","results.bookerc","results.williamsonm","results.krichevskyr","results.wellsr","results.patrickd","results.bennetm","results.buttigiegp","results.delaneyj","results.klobuchara"
+"1","08001","Adams", 57233,253,253,23755,12711,11688, 7664,  599,  291,  196,   83,   81,   76,   38,   28,   23,    0,    0,    0,    0
+"2","08003","Alamosa",  2126,  1,  8,  919,  462,  343,  326,   20,    8,   19,   11,    2,   10,    3,    2,    1,    0,    0,    0,    0
+"3","08005","Arapahoe", 79779,390,390,27605,18861,18962,12495,  808,  342,  313,   89,  129,   97,   36,   25,   17,    0,    0,    0,    0
+"4","08007","Archuleta",  1841,  1,  8,  639,  457,  370,  320,   23,    2,   13,    2,    4,    7,    4,    0,    0,    0,    0,    0,    0
+"5","08009","Baca",   227,  8,  9,   60,   67,   38,   28,   13,    2,    3,    2,    7,    1,    3,    1,    2,    0,    0,    0,    0
+"6","08011","Bent",   440,  5,  5,  151,  105,  126,   35,    4,    2,    9,    2,    1,    3,    1,    1,    0,    0,    0,    0,    0
+"7","08013","Boulder", 59192,129,235,21732,10743,11430,14184,  499,  207,  204,   37,   62,   66,    9,   11,    8,    0,    0,    0,    0
+"8","08014","Broomfield", 15830, 37, 37, 5420, 4105, 2972, 3000,  186,   74,   48,    4,    5,    4,    5,    3,    4,    0,    0,    0,    0
+"9","08015","Chaffee",  4181,  5,  5, 1494, 1037,  792,  760,   47,   20,   13,    4,    1,    7,    2,    4,    0,    0,    0,    0,    0
+"10","08017","Cheyenne",    76,  4,  5,   13,   21,   26,    8,    2,    1,    3,    0,    0,    1,    0,    1,    0,    0,    0,    0,    0
+"11","08019","Clear Creek",  1877,  9,  9,  688,  449,  371,  314,   27,   11,    8,    1,    1,    6,    0,    0,    1,    0,    0,    0,    0
+"12","08021","Conejos",  1262,  0, 10,  472,  384,  275,   78,   17,   11,   10,    5,    2,    3,    4,    1,    0,    0,    0,    0,    0
+"13","08023","Costilla",   782,  5,  8,  313,  197,  156,   82,    9,    8,    7,    3,    1,    2,    0,    4,    0,    0,    0,    0,    0
+"14","08025","Crowley",   269,  0,  6,   69,   80,   78,   28,    6,    1,    3,    2,    1,    0,    0,    1,    0,    0,    0,    0,    0
+"15","08027","Custer",   518,  3,  3,  134,  148,  111,  106,    8,    2,    4,    1,    2,    1,    0,    1,    0,    0,    0,    0,    0
+"16","08029","Delta",  3415, 20, 20, 1346,  772,  647,  522,   48,   13,   28,    2,    8,   19,    5,    4,    1,    0,    0,    0,    0
+"17","08031","Denver", 91398,171,356,36223,14701,20033,18847,  573,  349,  300,   72,  153,   80,   33,   17,   17,    0,    0,    0,    0
+"18","08033","Dolores",   170,  1,  4,   71,   38,   23,   28,    4,    0,    4,    2,    0,    0,    0,    0,    0,    0,    0,    0,    0
+"19","08035","Douglas", 45734,168,168,12934,13702,11009, 6961,  599,  206,  143,   50,   52,   42,   18,   10,    8,    0,    0,    0,    0
+"20","08037","Eagle",  9020, 30, 30, 2942, 2416, 2261, 1233,   86,   21,   32,    3,    6,   11,    5,    1,    3,    0,    0,    0,    0
+"21","08041","El Paso", 68814, 15, 15,24569,17869,13110,10965, 1081,  454,  350,   96,  133,   92,   41,   28,   26,    0,    0,    0,    0
+"22","08039","Elbert",  2134, 15, 15,  608,  583,  547,  296,   51,   19,   11,    7,    0,    9,    1,    1,    1,    0,    0,    0,    0
+"23","08043","Fremont",  4002, 22, 30, 1194, 1065, 1022,  548,   64,   24,   38,    7,   13,    7,    8,    9,    3,    0,    0,    0,    0
+"24","08045","Garfield",  6241, 27, 27, 2317, 1402, 1299, 1037,   85,   30,   34,    8,    5,   15,    4,    3,    2,    0,    0,    0,    0
+"25","08047","Gilpin",  1253,  6,  6,  573,  227,  182,  236,   19,    7,    1,    3,    2,    1,    2,    0,    0,    0,    0,    0,    0
+"26","08049","Grand",  2276, 12, 12,  839,  544,  470,  352,   36,    9,   15,    2,    5,    2,    0,    2,    0,    0,    0,    0,    0
+"27","08051","Gunnison",  3362,  0, 15, 1611,  616,  502,  565,   34,   13,   11,    1,    3,    3,    1,    1,    1,    0,    0,    0,    0
+"28","08053","Hinsdale",   109,  0, 10,   36,   25,   26,   19,    1,    0,    2,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0
+"29","08055","Huerfano",  1336, 11, 11,  477,  308,  290,  190,   28,    6,   10,   11,    7,    2,    2,    3,    2,    0,    0,    0,    0
+"30","08057","Jackson",    83,  5,  5,   26,   32,    8,   14,    1,    1,    1,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0
+"31","08059","Jefferson",116474,258,258,41220,28441,23258,20863, 1312,  475,  412,  134,  121,  136,   43,   34,   25,    0,    0,    0,    0
+"32","08061","Kiowa",    70,  1,  4,   16,   23,   18,    5,    5,    2,    0,    0,    0,    1,    0,    0,    0,    0,    0,    0,    0
+"33","08063","Kit Carson",   360,  0, 13,  108,   92,  104,   36,    6,    4,    2,    3,    0,    0,    1,    3,    1,    0,    0,    0,    0
+"34","08067","La Plata", 10859, 32, 32, 4337, 2622, 1573, 2032,  140,   37,   63,   16,    6,   21,    7,    4,    1,    0,    0,    0,    0
+"35","08065","Lake",  1322,  7,  7,  599,  286,  173,  220,   22,    8,    2,    3,    3,    4,    2,    0,    0,    0,    0,    0,    0
+"36","08069","Larimer", 57361,203,203,22018,12782, 9699,11550,  643,  227,  203,   54,   66,   62,   25,   24,    8,    0,    0,    0,    0
+"37","08071","Las Animas",  2203,  1, 16,  687,  638,  534,  225,   58,    5,   11,   18,   10,    5,    8,    2,    2,    0,    0,    0,    0
+"38","08073","Lincoln",   251, 13, 13,   74,   60,   50,   47,    7,    4,    5,    1,    1,    0,    0,    2,    0,    0,    0,    0,    0
+"39","08075","Logan",  1267, 14, 16,  381,  319,  342,  153,   23,   11,   13,    9,    9,    3,    2,    1,    1,    0,    0,    0,    0
+"40","08077","Mesa", 15691, 10, 10, 5093, 4431, 3067, 2495,  215,  106,  135,   33,   41,   41,   19,    9,    6,    0,    0,    0,    0
+"41","08079","Mineral",   198, 10, 10,   60,   48,   36,   44,    3,    0,    4,    2,    0,    0,    0,    0,    1,    0,    0,    0,    0
+"42","08081","Moffat",   549,  1, 10,  201,  143,   90,   81,   12,    6,    1,    3,    5,    4,    1,    1,    1,    0,    0,    0,    0
+"43","08083","Montezuma",  2917,  2,  2, 1218,  696,  422,  463,   43,   14,   32,    8,    6,    9,    2,    3,    1,    0,    0,    0,    0
+"44","08085","Montrose",  3858, 28, 28, 1169, 1140,  861,  533,   66,   18,   38,    9,    9,    4,    2,    7,    2,    0,    0,    0,    0
+"45","08087","Morgan",  1763, 17, 17,  549,  455,  478,  203,   38,    8,    9,   11,    5,    3,    3,    1,    0,    0,    0,    0,    0
+"46","08089","Otero",  1969,  1, 10,  657,  525,  517,  177,   35,   16,   19,    8,    5,    3,    2,    2,    3,    0,    0,    0,    0
+"47","08091","Ouray",  1327,  5,  5,  499,  343,  197,  249,   19,    3,   10,    1,    3,    2,    0,    0,    1,    0,    0,    0,    0
+"48","08093","Park",  2406,  6,  8,  974,  554,  379,  414,   48,    6,   14,    7,    0,    5,    3,    1,    1,    0,    0,    0,    0
+"49","08095","Phillips",   257,  8,  8,   69,   73,   70,   26,    5,    2,    3,    3,    2,    2,    2,    0,    0,    0,    0,    0,    0
+"50","08097","Pitkin",  4795, 10, 10, 1430, 1298, 1434,  572,   29,   14,   11,    2,    3,    2,    0,    0,    0,    0,    0,    0,    0
+"51","08099","Prowers",   732,  0, 13,  222,  196,  186,   84,    9,   12,    4,    5,    8,    2,    1,    3,    0,    0,    0,    0,    0
+"52","08101","Pueblo", 20105,114,128, 5995, 5621, 5704, 1988,  267,  132,  128,  104,   58,   38,   31,   29,   10,    0,    0,    0,    0
+"53","08103","Rio Blanco",   248,  5,  5,   69,   70,   58,   47,    2,    0,    1,    0,    0,    1,    0,    0,    0,    0,    0,    0,    0
+"54","08105","Rio Grande",  1263,  0, 15,  478,  289,  317,  160,    7,    0,    5,    7,    0,    0,    0,    0,    0,    0,    0,    0,    0
+"55","08107","Routt",  5475, 18, 18, 1817, 1473, 1204,  871,   53,   13,   23,    3,    7,    5,    3,    1,    2,    0,    0,    0,    0
+"56","08109","Saguache",  1162, 10, 10,  601,  177,  167,  169,   13,    9,    7,    6,    3,    7,    1,    2,    0,    0,    0,    0,    0
+"57","08111","San Juan",   196,  0, 10,   86,   34,   31,   38,    4,    0,    1,    2,    0,    0,    0,    0,    0,    0,    0,    0,    0
+"58","08113","San Miguel",  2210,  0, 10, 1015,  447,  347,  352,   25,    8,    7,    4,    1,    0,    1,    1,    2,    0,    0,    0,    0
+"59","08115","Sedgwick",   179,  5,  5,   57,   40,   40,   25,    6,    2,    3,    0,    2,    0,    3,    1,    0,    0,    0,    0,    0
+"60","08117","Summit",  6053, 20, 20, 2230, 1619, 1144,  943,   69,   13,   21,    3,    4,    5,    2,    0,    0,    0,    0,    0,    0
+"61","08119","Teller",  2650, 12, 13,  903,  724,  469,  454,   43,   20,   18,    8,    2,    7,    1,    0,    1,    0,    0,    0,    0
+"62","08121","Washington",   176,  0,  6,   62,   39,   35,   27,    5,    2,    1,    0,    0,    2,    3,    0,    0,    0,    0,    0,    0
+"63","08123","Weld", 25105, 15, 15, 9448, 5871, 5457, 3538,  361,  116,  129,   52,   60,   34,   18,    9,   12,    0,    0,    0,    0
+"64","08125","Yuma",   447, 13, 14,  105,  124,  127,   55,   15,    8,    6,    2,    1,    2,    1,    1,    0,    0,    0,    0,    0

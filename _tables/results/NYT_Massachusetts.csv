@@ -1,18 +1,15 @@
-"","candidate_id","candidate_key","first_name","last_name","order","name_display","party_id","incumbent","runoff","winner","votes","percent","percent_display","electoral_votes","has_image","link","pronoun","delegates","total_delegates","date_delegates"
-"1","biden-1036","bidenj","Joseph R.","Biden",1,"Joseph R. Biden Jr.","democrat",FALSE,FALSE,TRUE,440015,33.1,"33.1",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/joe-biden.html","he",32,404,351
-"2","sanders-1445","sandersb","Bernie","Sanders",2,"Bernie Sanders","democrat",FALSE,FALSE,FALSE,351077,26.4,"26.4",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/bernie-sanders.html","he",27,340,280
-"3","warren-62244","warrene","Elizabeth","Warren",3,"Elizabeth Warren","democrat",FALSE,FALSE,FALSE,283767,21.4,"21.4",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/elizabeth-warren.html","she",17,36,28
-"4","bloomberg-32324","bloombergm","Michael R.","Bloomberg",5,"Michael R. Bloomberg","democrat",FALSE,FALSE,FALSE,153850,11.6,"11.6",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/michael-bloomberg.html","he",0,12,12
-"5","buttigieg-67933","buttigiegp","Pete","Buttigieg",4,"Pete Buttigieg","democrat",FALSE,FALSE,FALSE,34567,2.6,"2.6",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/pete-buttigieg.html","he",0,26,0
-"6","klobuchar-51526","klobuchara","Amy","Klobuchar",6,"Amy Klobuchar","democrat",FALSE,FALSE,FALSE,16249,1.2,"1.2",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/amy-klobuchar.html","she",0,7,0
-"7","no-preference-100005-22-p","no_preference","","No Preference",14,"No Preference","democrat",FALSE,FALSE,FALSE,15292,1.2,"1.2",0,"FALSE","",NA,0,0,0
-"8","gabbard-62589","gabbardt","Tulsi","Gabbard",9,"Tulsi Gabbard","democrat",FALSE,FALSE,FALSE,9886,0.7,"0.7",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/tulsi-gabbard.html","she",0,1,1
-"9","patrick-51516","patrickd","Deval","Patrick",12,"Deval Patrick","democrat",FALSE,FALSE,FALSE,6567,0.5,"0.5",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/deval-patrick.html","he",0,0,0
-"10","steyer-67935","steyert","Tom","Steyer",8,"Tom Steyer","democrat",FALSE,FALSE,FALSE,6122,0.5,"0.5",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/tom-steyer.html","he",0,0,0
-"11","write-ins-21303-22-p","write_ins","","Write-ins",15,"Write-ins","democrat",FALSE,FALSE,FALSE,3857,0.3,"0.3",0,"FALSE","",NA,0,0,0
-"12","yang-67936","yanga","Andrew","Yang",7,"Andrew Yang","democrat",FALSE,FALSE,FALSE,2469,0.2,"0.2",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/andrew-yang.html","he",0,0,0
-"13","bennet-59911","bennetm","Michael","Bennet",11,"Michael Bennet","democrat",FALSE,FALSE,FALSE,1423,0.1,"0.1",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/michael-bennet.html","he",0,0,0
-"14","delaney-61562","delaneyj","John","Delaney",13,"John Delaney","democrat",FALSE,FALSE,FALSE,929,0.1,"0.1",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/john-delaney.html","he",0,0,0
-"15","williamson-63672","williamsonm","Marianne","Williamson",10,"Marianne Williamson","democrat",FALSE,FALSE,FALSE,555,0,"0.0",0,"","","",0,0,0
-"16","booker-63133","bookerc","Cory","Booker",16,"Cory Booker","democrat",FALSE,FALSE,FALSE,455,0,"0.0",0,"TRUE","","he",0,0,0
-"17","castro-67934","castroj","JuliÃ¡n","Castro",17,"JuliÃ¡n Castro","democrat",FALSE,FALSE,FALSE,291,0,"0.0",0,"FALSE","","he",0,0,0
+"","fips","name","votes","reporting","precincts","results.bidenj","results.sandersb","results.warrene","results.bloombergm","results.buttigiegp","results.klobuchara","results.steyert","results.gabbardt","results.patrickd","results.no_preference","results.yanga","results.write_ins","results.bennetm","results.williamsonm","results.delaneyj","results.bookerc","results.castroj"
+"1","25001","Barnstable", 54555, 64, 65, 21068, 11869,  9116,  7919,  2109,  1025,   420,   383,   210,   185,    86,    57,    44,    31,    18,    13,     2
+"2","25003","Berkshire", 22978, 44, 59,  8990,  6596,  4309,  2086,   383,   174,    23,    95,   172,    60,    25,    20,    11,    11,     8,     6,     9
+"3","25005","Bristol", 63479,142,172, 23812, 18627,  8361,  8353,  1499,   565,   361,   498,   472,   438,    96,   192,    78,    35,    41,    30,    21
+"4","25007","Dukes",  4452,  4,  7,  1471,  1164,   958,   555,   148,    68,    26,    27,    14,     2,     8,     3,     3,     2,     0,     2,     1
+"5","25009","Essex",147895,233,240, 50334, 40271, 26768, 19560,  4456,  1968,   853,  1417,   826,   564,   232,   248,   161,    65,    75,    49,    48
+"6","25011","Franklin", 17275, 32, 40,  4064,  7011,  4336,  1084,   279,   135,    43,   136,    67,    36,    26,    12,     7,     8,    28,     2,     1
+"7","25013","Hampden", 61686,157,166, 22682, 19006,  8446,  7726,  1147,   588,   143,   533,   541,   318,   117,   123,   161,    29,    60,    27,    39
+"8","25015","Hampshire", 42680, 53, 56, 10384, 14941, 12628,  2962,   703,   412,    54,   224,   135,    98,    52,    27,    16,    15,     9,    14,     6
+"9","25017","Middlesex",391946,459,474,119494, 96960,106970, 44293, 10775,  5056,  1444,  2579,  1316,  1128,   819,   408,   279,   114,   130,   133,    48
+"10","25019","Nantucket",  2594,  1,  1,  1052,   622,   384,   373,    66,    35,    17,    15,     9,     9,     4,     1,     2,     1,     4,     0,     0
+"11","25021","Norfolk",155813,196,211, 57755, 33191, 31818, 21397,  4178,  2747,   738,  1372,   604,   655,   328,   267,   271,    77,   357,    49,     9
+"12","25023","Plymouth", 88276,126,143, 34099, 22897, 12258, 11760,  2846,  1148,   737,   852,   624,   485,   155,   168,    78,    51,    58,    34,    26
+"13","25025","Suffolk",157794,294,294, 47421, 48233, 41502, 13654,  2439,   941,   372,   817,   962,   461,   309,   192,   213,    67,   101,    59,    51
+"14","25027","Worcester",114504,201,242, 40124, 33637, 18991, 12936,  3667,  1486,   905,   984,   642,   492,   234,   133,   103,    56,    44,    39,    31
