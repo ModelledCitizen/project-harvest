@@ -1,6 +1,6 @@
 "","candidate_id","candidate_key","first_name","last_name","order","name_display","party_id","incumbent","runoff","winner","votes","percent","percent_display","electoral_votes","has_image","link","pronoun","delegates","total_delegates","date_delegates"
-"1","sanders-1445","sandersb","Bernie","Sanders",2,"Bernie Sanders","democrat",FALSE,FALSE,FALSE,0,0,"0.0",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/bernie-sanders.html","he",0,68,8
-"2","biden-1036","bidenj","Joseph R.","Biden",1,"Joseph R. Biden Jr.","democrat",FALSE,FALSE,FALSE,0,0,"0.0",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/joe-biden.html","he",0,94,41
+"1","sanders-1445","sandersb","Bernie","Sanders",2,"Bernie Sanders","democrat",FALSE,FALSE,FALSE,0,0,"0.0",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/bernie-sanders.html","he",0,69,9
+"2","biden-1036","bidenj","Joseph R.","Biden",1,"Joseph R. Biden Jr.","democrat",FALSE,FALSE,FALSE,0,0,"0.0",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/joe-biden.html","he",6,100,47
 "3","warren-62244","warrene","Elizabeth","Warren",3,"Elizabeth Warren","democrat",FALSE,FALSE,FALSE,0,0,"0.0",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/elizabeth-warren.html","she",0,8,0
 "4","bloomberg-32324","bloombergm","Michael R.","Bloomberg",5,"Michael R. Bloomberg","democrat",FALSE,FALSE,FALSE,0,0,"0.0",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/michael-bloomberg.html","he",0,4,0
 "5","gabbard-62589","gabbardt","Tulsi","Gabbard",9,"Tulsi Gabbard","democrat",FALSE,FALSE,FALSE,0,0,"0.0",0,"TRUE","https://www.nytimes.com/interactive/2020/us/elections/tulsi-gabbard.html","she",0,1,0
