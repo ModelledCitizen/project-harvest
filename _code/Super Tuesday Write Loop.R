@@ -15,6 +15,7 @@ while (Sys.time() <= "2020-03-03 23:59:59 EST") {
   nyt_write("Vermont")
   nyt_write("Virginia")
 
+  system("git add .")
   system("git commit -m 'super tuesday'")
   system("say 'Time to push!'")
   Sys.sleep(600)

@@ -28,7 +28,7 @@ nyt_retrieve <-
           require(rvest)
           cal <-
             read_html(
-              "https://en.wikipedia.org/wiki/2020_Democratic_Party_presidential_primaries"
+              "https://en.wikipedia.org/w/index.php?title=2020_Democratic_Party_presidential_primaries&oldid=943803552"
             ) %>%
             html_nodes("#mw-content-text > div > table:nth-child(124)") %>%
             html_table(fill = T)
