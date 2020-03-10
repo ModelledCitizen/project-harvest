@@ -112,9 +112,3 @@ for (i in 1:nrow(poll_list)) {
 
 rm(i, poll_list)
 
-
-
-
-tmp <- rcp_retrieve("Alabama")
-
-clean_poll(tmp)

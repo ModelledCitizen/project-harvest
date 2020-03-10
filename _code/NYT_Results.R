@@ -112,3 +112,11 @@ nyt_write("Utah")
 nyt_write("Vermont")
 nyt_write("Virginia")
 
+# 2020-03-10
+nyt_write("Michigan")
+nyt_write("Washington")
+nyt_write("Missouri")
+nyt_write("Mississippi")
+nyt_write("Idaho")
+nyt_write("North Dakota")
+
