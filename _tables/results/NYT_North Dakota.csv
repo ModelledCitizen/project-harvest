@@ -1,16 +1,16 @@
-"","fips","name","votes","reporting","precincts","results.bennetm","results.bidenj","results.bloombergm","results.buttigiegp","results.delaneyj","results.gabbardt","results.klobuchara","results.patrickd","results.sandersb","results.steyert","results.warrene","results.yanga"
-"1","belcourt-caucus","Belcourt Caucus",0,0, 10,0,0,0,0,0,0,0,0,0,0,0,0
-"2","bismarck-caucus","Bismarck Caucus",0,0,225,0,0,0,0,0,0,0,0,0,0,0,0
-"3","cannonball-caucus","Cannonball Caucus",0,0, 10,0,0,0,0,0,0,0,0,0,0,0,0
-"4","devils-lake-caucus","Devils Lake Caucus",0,0, 10,0,0,0,0,0,0,0,0,0,0,0,0
-"5","dickinson-caucus","Dickinson Caucus",0,0, 35,0,0,0,0,0,0,0,0,0,0,0,0
-"6","fargo-caucus","Fargo Caucus",0,0,225,0,0,0,0,0,0,0,0,0,0,0,0
-"7","fort-totten-caucus","Fort Totten Caucus",0,0, 10,0,0,0,0,0,0,0,0,0,0,0,0
-"8","grand-forks-caucus","Grand Forks Caucus",0,0,175,0,0,0,0,0,0,0,0,0,0,0,0
-"9","jamestown-caucus","Jamestown Caucus",0,0, 35,0,0,0,0,0,0,0,0,0,0,0,0
-"10","minot-caucus","Minot Caucus",0,0, 75,0,0,0,0,0,0,0,0,0,0,0,0
-"11","new-town-caucus","New Town Caucus",0,0, 10,0,0,0,0,0,0,0,0,0,0,0,0
-"12","valley-city-caucus","Valley City Caucus",0,0, 10,0,0,0,0,0,0,0,0,0,0,0,0
-"13","vote-by-mail-caucus","Vote By Mail Caucus",0,0,100,0,0,0,0,0,0,0,0,0,0,0,0
-"14","wahpeton-caucus","Wahpeton Caucus",0,0, 35,0,0,0,0,0,0,0,0,0,0,0,0
-"15","williston-caucus","Williston Caucus",0,0, 35,0,0,0,0,0,0,0,0,0,0,0,0
+"","fips","name","votes","reporting","precincts","results.sandersb","results.bidenj","results.warrene","results.bloombergm","results.buttigiegp","results.delaneyj","results.gabbardt","results.yanga","results.bennetm","results.klobuchara","results.patrickd","results.steyert"
+"1","belcourt-caucus","Belcourt Caucus", 442, 10, 10, 286, 146,   3,   2,   2,   1,   1,   1,   0,   0,   0,   0
+"2","bismarck-caucus","Bismarck Caucus",2302,225,225,1126,1136,  18,   3,   4,   0,  12,   1,   0,   1,   0,   1
+"3","cannonball-caucus","Cannonball Caucus", 134, 10, 10, 103,  28,   0,   0,   0,   0,   3,   0,   0,   0,   0,   0
+"4","devils-lake-caucus","Devils Lake Caucus", 268, 10, 10,  87, 176,   2,   1,   1,   0,   1,   0,   0,   0,   0,   0
+"5","dickinson-caucus","Dickinson Caucus", 374, 35, 35, 212, 152,   1,   1,   0,   1,   4,   2,   1,   0,   0,   0
+"6","fargo-caucus","Fargo Caucus",4112,225,225,2682,1376,  19,   1,   4,   0,  24,   1,   0,   4,   0,   1
+"7","fort-totten-caucus","Fort Totten Caucus",  78, 10, 10,  53,  21,   2,   0,   0,   1,   0,   1,   0,   0,   0,   0
+"8","grand-forks-caucus","Grand Forks Caucus",1838,175,175,1033, 766,  13,   1,   3,   0,  12,   5,   1,   3,   1,   0
+"9","jamestown-caucus","Jamestown Caucus", 475, 35, 35, 156, 307,   3,   0,   2,   0,   7,   0,   0,   0,   0,   0
+"10","minot-caucus","Minot Caucus", 986, 75, 75, 523, 441,  10,   1,   2,   0,   8,   0,   0,   1,   0,   0
+"11","new-town-caucus","New Town Caucus", 261, 10, 10, 164,  94,   0,   0,   0,   0,   2,   1,   0,   0,   0,   0
+"12","valley-city-caucus","Valley City Caucus", 332, 10, 10, 110, 212,   5,   0,   0,   0,   3,   1,   0,   0,   0,   1
+"13","vote-by-mail-caucus","Vote By Mail Caucus",2214,100,100, 878, 580, 283, 103, 144,   0,   6,   5,   0, 212,   1,   2
+"14","wahpeton-caucus","Wahpeton Caucus", 286, 35, 35, 111, 168,   4,   0,   1,   0,   0,   1,   0,   1,   0,   0
+"15","williston-caucus","Williston Caucus", 311, 35, 35, 158, 139,   3,   0,   1,   0,   6,   1,   1,   1,   0,   1
