@@ -87,14 +87,18 @@ nyt_write <- function(state, contest = "president", party = "democrat") {
 # 2020-02-03
 nyt_write("Iowa")
 
+
 # 2020-02-11
 nyt_write("New Hampshire")
+
 
 # 2020-02-22
 nyt_write("Nevada")
 
+
 # 2020-02-29
 nyt_write("South Carolina")
+
 
 # 2020-03-03
 nyt_write("Alabama")
@@ -111,6 +115,7 @@ nyt_write("Texas")
 nyt_write("Utah")
 nyt_write("Vermont")
 nyt_write("Virginia")
+
 
 # 2020-03-10
 nyt_write("Michigan")
