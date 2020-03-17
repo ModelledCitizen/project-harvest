@@ -7,8 +7,8 @@
 #
 #   Title: NYT Results
 #  Author: UnlikelyVolcano
-# Updated: 04 March 2020
-#   Notes: Revised to gather county level results
+# Updated: 17 March 2020
+#   Notes: Updated primary calendar source due to COVID delays
 
 # Working Directory -------------------------------------------------------
 
@@ -23,37 +23,48 @@ nyt_retrieve <-
     require(magrittr)
     require(RCurl)
     make_url <- function(state, contest, party) {
-      get_election_date <- function(state) {
-        get_calendar <- function() {
+      get_election_date <- function(state, party) {
+        get_calendar <- function(party) {
           if ("primary_calendar.csv" %in% list.files()) {
             cal <- read.csv("primary_calendar.csv")
           } else {
             require(rvest)
+            require(stringr)
             cal <-
               read_html(
-                "https://en.wikipedia.org/w/index.php?title=2020_Democratic_Party_presidential_primaries&oldid=943803552"
+                "https://www.uspresidentialelectionnews.com/2020-presidential-primary-schedule-calendar/"
               ) %>%
-              html_nodes("#mw-content-text > div > table:nth-child(124)") %>%
+              html_nodes("#footable_34731") %>%
               html_table(fill = T)
             cal <- cal[[1]]
-            names(cal)[names(cal) == "Primaries/caucuses"] <-
-              "State"
             cal <-
-              cal[cal$State != "Total", c("Date", "State")]
-            cal$Date <- as.Date(strptime(cal$Date, "%B %e"))
-            cal$State <- gsub("\\(|\\)", "", cal$State)
-            cal$State <- gsub(" caucuses| primary", "", cal$State)
+              cal[cal$Type %in% c("Open", "Closed", "Mixed"), c("Date", "State")]
+            switch(party,
+                   republican = {
+                     cal <- cal[str_detect(cal$State, "Democratic", negate = T), ]
+                   },
+                   democrat = {
+                     cal <- cal[str_detect(cal$State, "Republican", negate = T),]
+                   })
+            cal$Date <- as.Date(strptime(cal$Date, "%a, %b %e"))
+            cal$State <- gsub(" \\|", "", cal$State)
             cal$State <-
-              gsub(" firehouse| voting period ends", "", cal$State)
-            cal$State <- gsub(" party-run", "", cal$State)
+              gsub(
+                " Democratic| Republican| caucus| caucuses| primary| convention| Results",
+                "",
+                cal$State
+              )
+            cal$State <- gsub("\\(|\\)", "", cal$State)
+            cal$State <- gsub(" delayed", "", cal$State)
+            cal$State <- gsub(" to 3/10", "", cal$State)
             write.csv(cal, "primary_calendar.csv", row.names = F)
           }
           cal
         }
-        cal <- get_calendar()
+        cal <- get_calendar(party)
         cal$Date[cal$State == state]
       }
-      date <- get_election_date(state)
+      date <- get_election_date(state, party)
       state <- gsub(" ", "-", tolower(state))
       sprintf(
         "https://int.nyt.com/applications/elections/2020/data/api/%s/%s/%s/%s.json",
@@ -75,12 +86,14 @@ nyt_retrieve <-
     list(localities = extract_localities(jsn), toplines = extract_toplines(jsn))
   }
 
-nyt_write <- function(state, contest = "president", party = "democrat") {
-  dta <- nyt_retrieve(state, contest, party)[["localities"]]
-  saveRDS(dta, file = sprintf("_data/results/NYT_%s.RDS", state))
-  write.csv(dta, file = sprintf("_tables/results/NYT_%s.csv", state))
-}
-
+nyt_write <-
+  function(state,
+           contest = "president",
+           party = "democrat") {
+    dta <- nyt_retrieve(state, contest, party)[["localities"]]
+    saveRDS(dta, file = sprintf("_data/results/NYT_%s.RDS", state))
+    write.csv(dta, file = sprintf("_tables/results/NYT_%s.csv", state))
+  }
 
 # Output ------------------------------------------------------------------
 
@@ -124,4 +137,14 @@ nyt_write("Missouri")
 nyt_write("Mississippi")
 nyt_write("Idaho")
 nyt_write("North Dakota")
+
+
+# 2020-03-17
+nyt_write("Arizona")
+nyt_write("Florida")
+nyt_write("Illinois")
+nyt_write("Ohio")
+
+
+
 
