@@ -143,7 +143,7 @@ nyt_write("North Dakota")
 nyt_write("Arizona")
 nyt_write("Florida")
 nyt_write("Illinois")
-nyt_write("Ohio")
+
 
 
 
