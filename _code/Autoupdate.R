@@ -7,13 +7,13 @@
 #
 #   Title: Automatic Updates
 #  Author: UnlikelyVolcano
-# Updated: 18 March 2020
+# Updated: 19 March 2020
 #   Notes:
 #
 
 # Working Directory -------------------------------------------------------
 
-setwd("~/project-harvest")
+UnlikelyTools::set_wd("project-harvest")
 
 
 # Update Data -------------------------------------------------------------
