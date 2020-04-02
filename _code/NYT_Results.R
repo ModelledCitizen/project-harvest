@@ -147,4 +147,3 @@ nyt_write("Illinois")
 
 
 
-
