@@ -30,4 +30,3 @@ Scrape polls and election result data from various news sites and aggregators.
 - Gather polls in a central database
 - Gather results in a central databse
 
-<p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101237072ns.gif" /></p>
