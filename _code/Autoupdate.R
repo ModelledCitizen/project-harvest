@@ -26,4 +26,4 @@ source("_code/NYT_Results.R")
 # Push to Repo ------------------------------------------------------------
 
 system("git add .; git commit -m 'Automatic update'")
-#system("git push")
+system("git push")
