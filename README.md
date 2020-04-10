@@ -9,6 +9,8 @@
 # Project Harvest (Election Scraping)
 Scrape polls and election result data from various news sites and aggregators. 
 
+[Click here for the GitHub repo.](https://github.com/UnlikelyVolcano/project-harvest)
+
 ## Sites
 - [New York Times](https://www.nytimes.com) (NYT)
 - [FiveThirtyEight](https://fivethirtyeight.com) (FTE or 538)
