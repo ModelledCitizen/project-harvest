@@ -145,5 +145,7 @@ nyt_write("Florida")
 nyt_write("Illinois")
 
 
+# 2020-04-07
+nyt_write("Wisconsin")
 
 
