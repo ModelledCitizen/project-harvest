@@ -25,8 +25,8 @@ nyt_retrieve <-
     make_url <- function(state, contest, party) {
       get_election_date <- function(state, party) {
         get_calendar <- function(party) {
-          if ("primary_calendar.csv" %in% list.files()) {
-            cal <- read.csv("primary_calendar.csv")
+          if (paste0(party, "_primary_calendar.csv") %in% list.files()) {
+            cal <- read.csv(paste0(party, "_primary_calendar.csv"))
           } else {
             require(rvest)
             require(stringr)
@@ -57,12 +57,18 @@ nyt_retrieve <-
             cal$State <- gsub("\\(|\\)", "", cal$State)
             cal$State <- gsub(" delayed", "", cal$State)
             cal$State <- gsub(" to 3/10", "", cal$State)
-            write.csv(cal, "primary_calendar.csv", row.names = F)
+            cal$State <-
+              gsub(
+                " Update| Rescheduled| Mail only",
+                "",
+                cal$State
+              )
+            write.csv(cal, paste0(party, "_primary_calendar.csv"), row.names = F)
           }
           cal
         }
         cal <- get_calendar(party)
-        cal$Date[cal$State == state]
+        as.Date(cal$Date[cal$State == state])
       }
       date <- get_election_date(state, party)
       state <- gsub(" ", "-", tolower(state))
@@ -147,5 +153,3 @@ nyt_write("Illinois")
 
 # 2020-04-07
 nyt_write("Wisconsin")
-
-
