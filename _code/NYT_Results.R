@@ -7,7 +7,7 @@
 #
 #   Title: NYT Results
 #  Author: UnlikelyVolcano
-# Updated: 17 March 2020
+# Updated: 14 April 2020
 #   Notes: Updated primary calendar source due to COVID delays
 
 # Working Directory -------------------------------------------------------
