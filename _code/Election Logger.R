@@ -125,6 +125,16 @@ while (TRUE) {
   leaders("Arizona")
   leaders("Florida")
   leaders("Illinois")
+  # 2020-04-07
+  leaders("Wisconsin")
+  # 2020-04-10
+  leaders("Alaska")
+  # 2020-04-28
+  leaders("Ohio")
+  # 2020-05-02
+  leaders("Kansas")
+  # 2020-05-12
+  leaders("Nebraska")
   Sys.sleep(30)
 }
 
