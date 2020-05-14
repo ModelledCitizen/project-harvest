@@ -7,8 +7,9 @@
 #
 #   Title: NYT Results
 #  Author: UnlikelyVolcano
-# Updated: 14 April 2020
-#   Notes: Updated primary calendar source due to COVID delays
+# Updated: 13 May 2020
+#   Notes: Updated primary calendar source due to COVID delays,
+#          add latest states
 
 # Working Directory -------------------------------------------------------
 
@@ -153,3 +154,16 @@ nyt_write("Illinois")
 
 # 2020-04-07
 nyt_write("Wisconsin")
+
+# 2020-04-10
+nyt_write("Alaska")
+
+# 2020-04-28
+nyt_write("Ohio")
+
+# 2020-05-02
+nyt_write("Kansas")
+
+# 2020-05-12
+nyt_write("Nebraska")
+
