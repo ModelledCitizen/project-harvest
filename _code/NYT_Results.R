@@ -167,3 +167,30 @@ nyt_write("Kansas")
 # 2020-05-12
 nyt_write("Nebraska")
 
+# 2020-05-19
+nyt_write("Oregon")
+
+# 2020-05-22
+#nyt_write("Hawaii")
+
+# 2020-06-02
+#nyt_write("Delaware")
+nyt_write("District of Columbia")
+nyt_write("Indiana")
+nyt_write("Maryland")
+nyt_write("Montana")
+nyt_write("New Mexico")
+nyt_write("Pennsylvania")
+nyt_write("Rhode Island")
+nyt_write("South Dakota")
+
+# 2020-06-06
+#nyt_write("Virgin Islands")
+
+# 2020-06-09
+nyt_write("Georgia")
+nyt_write("West Virginia")
+
+# 2020-06-23
+nyt_write("Kentucky")
+nyt_write("New York")
