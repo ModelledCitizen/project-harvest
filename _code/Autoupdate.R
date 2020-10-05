@@ -6,7 +6,7 @@
 #             /_/
 #
 #   Title: Automatic Updates
-#  Author: UnlikelyVolcano
+#  Author: ModelledCitizen
 # Updated: 14 April 2020
 #   Notes:
 #

@@ -6,7 +6,7 @@
 #             /_/
 #
 #   Title: NYT Results
-#  Author: UnlikelyVolcano
+#  Author: ModelledCitizen
 # Updated: 13 May 2020
 #   Notes: Updated primary calendar source due to COVID delays,
 #          add latest states

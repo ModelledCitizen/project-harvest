@@ -6,7 +6,7 @@
 #             /_/
 #
 #   Title: RCP Polls
-#  Author: UnlikelyVolcano
+#  Author: ModelledCitizen
 # Updated: 04 March 2020
 #   Notes: Simplified and streamlined to match NYT,
 #          but need to improve ID retrieval.
